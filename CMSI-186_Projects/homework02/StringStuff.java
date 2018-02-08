@@ -81,7 +81,7 @@ public class StringStuff {
    * corresponding to the numbers 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, and 26.
    *
    * Note: The method should only return characters/letters in the alphabet. Numbers and
-   * alphanumeric characters shall not be included.
+   * other characters shall not be included.
    *
    * @param s String containing the data to be parsed for &quot;even&quot; letters
    * @return  String containing the &quot;even&quot; letters from the input
@@ -100,6 +100,9 @@ public class StringStuff {
    * Method to return the characters in a string that correspond to the &quot;ODD&quot; index
    * numbers of the alphabet.  The letters A, C, E, G, I, K, M, O, Q, S, U, W, and Y are odd,
    * corresponding to the numbers 1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, and 25.
+   *
+   * Note: The method should only return characters/letters in the alphabet. Numbers and
+   * other characters shall not be included.
    *
    * @param s String containing the data to be parsed for &quot;odd&quot; letters
    * @return  String containing the &quot;odd&quot; letters from the input
