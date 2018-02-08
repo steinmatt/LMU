@@ -68,7 +68,7 @@ public class StringStuff {
     public static String removeDupes( String s ) {
       String noDupes = "";
       for (int i = 0; i < s.length(); i++) {
-          if(!noDupes.contains(String.valueOf(s.charAt(i)))) {
+          if(!noDupes.contains(String.valueOf(s.charAt(i)))) { // "!" in front causes statement to be inverted 
               noDupes += String.valueOf(s.charAt(i));
           }
       }
