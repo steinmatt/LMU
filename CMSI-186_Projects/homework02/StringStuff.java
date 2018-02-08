@@ -17,7 +17,8 @@
  *            Rev      Date     Modified by:  Reason for change/modification
  *           -----  ----------  ------------  -----------------------------------------------------------
  *  @version 1.0.0  2017-01-19  B.J. Johnson  Initial writing and release
- *  @version 1.1.0  2017-02-06  Matt Stein    Fill in methods to make the program actually work
+ *  @version 1.1.0  2018-02-06  Matt Stein    Fill in methods to make the program actually work
+ *  @version 1.1.1  2018-02-07  Matt Stein    Finished bottom three methods and wrote a method to remove duplicates. 
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 import java.util.Set;
 import java.util.LinkedHashSet;
@@ -58,16 +59,41 @@ public class StringStuff {
       return true;
    }
 
+   /**
+    * Method to remove all duplicate characters from a string.
+    *
+    * @param s String containing the data to be parsed for &quot;even&quot; letters
+    * @return  String containing &quot;one copy&quot; of the letters from the input
+    */
+    public static String removeDupes( String s ) {
+      String noDupes = "";
+      for (int i = 0; i < s.length(); i++) {
+          if(!noDupes.contains(String.valueOf(s.charAt(i)))) {
+              noDupes += String.valueOf(s.charAt(i));
+          }
+      }
+      return noDupes;
+    }
+
   /**
    * Method to return the characters in a string that correspond to the &quot;EVEN&quot; index
    * numbers of the alphabet.  The letters B, D, F, H, J, L, N, P, R, T, V, X, and Z are even,
    * corresponding to the numbers 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, and 26.
    *
+   * Note: The method should only return characters/letters in the alphabet. Numbers and
+   * alphanumeric characters shall not be included.
+   *
    * @param s String containing the data to be parsed for &quot;even&quot; letters
    * @return  String containing the &quot;even&quot; letters from the input
    */
    public static String evensOnly( String s ) {
-      return new String( "HJHJHJ" );
+     String onlyEvens = "";
+     for ( int i = 0; i < s.length(); i++ ) {
+         if( (s.codePointAt(i) % 2 == 0) && (((s.codePointAt(i) <= 90) && (s.codePointAt(i) >= 65)) || ((s.codePointAt(i) >= 97) && (s.codePointAt(i) <= 122))) ) {
+             onlyEvens += String.valueOf(s.charAt(i));
+         }
+     }
+      return onlyEvens;
    }
 
   /**
@@ -79,7 +105,13 @@ public class StringStuff {
    * @return  String containing the &quot;odd&quot; letters from the input
    */
    public static String oddsOnly( String s ) {
-      return new String( "IKIKIK" );
+     String onlyOdds = "";
+     for ( int i = 0; i < s.length(); i++ ) {
+         if( (s.codePointAt(i) % 2 != 0) && (((s.codePointAt(i) <= 90) && (s.codePointAt(i) >= 65)) || ((s.codePointAt(i) >= 97) && (s.codePointAt(i) <= 122))) ) {
+             onlyOdds += String.valueOf(s.charAt(i));
+         }
+     }
+      return onlyOdds;
    }
 
   /**
@@ -90,7 +122,11 @@ public class StringStuff {
    * @return  String containing the &quot;even&quot; letters from the input without duplicates
    */
    public static String evensOnlyNoDupes( String s ) {
-      return new String( "HJ" );
+      String dummyString = "";
+      String resultString = "";
+      dummyString = StringStuff.removeDupes(s);
+      resultString = StringStuff.evensOnly(dummyString);
+      return resultString;
    }
 
   /**
@@ -101,7 +137,11 @@ public class StringStuff {
    * @return  String containing the &quot;odd&quot; letters from the input without duplicates
    */
    public static String oddsOnlyNoDupes( String s ) {
-      return new String( "IK" );
+     String dummyString = "";
+     String resultString = "";
+     dummyString = StringStuff.removeDupes(s);
+     resultString = StringStuff.oddsOnly(dummyString);
+     return resultString;
    }
 
   /**
@@ -111,7 +151,12 @@ public class StringStuff {
    * @return  String containing the reverse of the input string
    */
    public static String reverse( String s ) {
-      return new String( "kculc eht tahw" );
+      String reversedString = "" ;
+      for ( int i = (s.length() - 1); i > -1; i-- ) {
+        reversedString += String.valueOf(s.charAt(i));
+      }
+
+      return reversedString;
    }
 
   /**
@@ -143,3 +188,4 @@ public class StringStuff {
       System.out.println( "reverse()          returns: " + reverse( "REHEARSALSZ" ) );
    }
 }
+
