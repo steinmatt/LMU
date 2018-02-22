@@ -32,7 +32,7 @@
  *           -----  ----------  ------------  -----------------------------------------------------------
  *  @version 1.0.0  2017-02-06  B.J. Johnson  Initial writing and release
  *  @version 1.1.0  2018-02-08  Matt Stein    Began creating/understanding initial code structure.
- *  @version 1.2.0  2018-02-13  Matt Stein    Finished out the constructor/method functions to create full die. 
+ *  @version 1.2.0  2018-02-13  Matt Stein    Finished out the constructor/method functions to create full die.
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 public class Die {
 
@@ -64,7 +64,7 @@ public class Die {
    * @return  integer value of the result of the roll, randomly selected
    */
    public int roll() {
-      pips = (int) Math.random()*sides + 1; // random returns a double
+      pips = (int) Math.floor(Math.random()*sides) + 1; // random returns a double
       return pips;
    }
 
@@ -81,6 +81,21 @@ public class Die {
       }
       return pips;
    }
+
+   /**
+    *  Set the value of THIS die to return to the caller; note that the way
+    *  the count is determined is left as a design decision to the programmer
+    *  For example, what about a four-sided die - which face is considered its
+    *  "value"?
+    * @return the pip count of THIS die instance
+    */
+    public int setValue(int value) throws IllegalArgumentException{
+       if (value > sides) {
+         throw new IllegalArgumentException( "The value entered is impossible and exceeds the greatest number of sides");
+       }
+       pips = value;
+       return pips;
+    }
 
   /**
    * @param  int  the number of sides to set/reset for this Die instance
@@ -114,6 +129,10 @@ public class Die {
    * A little test main to check things out
    */
    public static void main( String[] args ) {
+      Die d = new Die(7);
+      System.out.println("New value = " + d.roll());
+      System.out.println("Current Value = " + d.getValue());
+      System.out.println(d.toString());
       System.out.println( "Hello world from the Die class..." );
    }
 
