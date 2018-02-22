@@ -13,7 +13,7 @@
  *  ---------------
  *            Rev      Date     Modified by:  Reason for change/modification
  *           -----  ----------  ------------  -----------------------------------------------------------
- *  @version 1.0.0  2017-02-21  Matt Stein    Creation and completed file. 
+ *  @version 1.0.0  2017-02-21  Matt Stein    Creation and completed file.
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
  import java.io.BufferedReader;
  import java.io.InputStreamReader;
@@ -44,7 +44,7 @@
 
       // begin running the program.
       System.out.printf( "\n  Congratulations! You have created your set of die.");
-      System.out.println("\n  Currently, your set of die reads as the following: \n      " + userSet.toString());
+      System.out.println("\n  Currently, your set of die reads as the following: \n\n\n      " + userSet.toString());
 
 
      BufferedReader input = new BufferedReader( new InputStreamReader( System.in ) );
@@ -77,19 +77,20 @@
            }
            else if( 1 == Character.getNumericValue(inputLine.charAt(0)) ) {
               userSet.roll();
-              System.out.println("Your die set is now: \n     " + userSet.toString());
+              System.out.println(" \n \n \n \n \n Your die set is now: \n     " + userSet.toString());
            }
            else if( 2 == Character.getNumericValue(inputLine.charAt(0)) ) {
-              System.out.println("Please enter which die you would like to roll:");
+              System.out.println("\n \n \n \n \n  Please enter which die you would like to roll:");
               inputLine = input.readLine();
               if (0 == inputLine.length()){
-                System.out.println("\n \n Please enter a number!");
+                System.out.println("\n \n \n \n \n \n  Please enter a number!");
               }
               userSet.rollIndividual(Character.getNumericValue(inputLine.charAt(0)));
-              System.out.println("Your die set is now:     " + userSet.toString());
+              System.out.println("\n \n \n \n \n Your die set is now:     " + userSet.toString());
            }
            else if( 3 == Character.getNumericValue(inputLine.charAt(0)) ) {
-              System.out.println("\n \n The High Score for your set of die is:  " + userSet.sum());
+              System.out.println("\n \n \n \n \n The High Score for your set of die is:  " + userSet.sum());
+
            }
            else if( 4 == Character.getNumericValue(inputLine.charAt(0)) ) {
               if (highScore > userSet.sum()) {
@@ -97,11 +98,11 @@
               }
               else {
                 highScore = userSet.sum();
-                System.out.println("\n \n The overall High Score is now:    " + highScore);
+                System.out.println("\n \n \n \n \n  The overall High Score is now:    " + highScore);
               }
            }
            else if( 5 == Character.getNumericValue(inputLine.charAt(0)) ) {
-              System.out.println("\n \n The overall High Score is:    " + highScore);
+              System.out.println("\n \n \n \n \n The overall High Score is:    " + highScore);
            }
            else if( 6 == Character.getNumericValue(inputLine.charAt(0)) ) {
               failSafe = false;
