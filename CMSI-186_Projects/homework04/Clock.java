@@ -98,7 +98,7 @@ public class Clock {
    *         to take a VERY LONG TIME to complete!
    */
    public double validateTimeSliceArg( String argValue ) {
-     if ( (Double.parseDouble(argValue) > (double) 0 ) && (Double.parseDouble(argValue) < (double) 1800 )) {
+     if ( (Double.parseDouble(argValue) >= (double) 0 ) && (Double.parseDouble(argValue) < (double) 1800 )) {
        return Double.parseDouble(argValue);
      }
      else {
