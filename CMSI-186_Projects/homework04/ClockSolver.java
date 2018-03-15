@@ -18,7 +18,7 @@
  *  @version 1.0.0  2017-02-28  B.J. Johnson  Initial writing and release
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-public class ClockSolverEmpty {
+public class ClockSolver {
   /**
    *  Class field definintions go here
    */
@@ -30,7 +30,7 @@ public class ClockSolverEmpty {
    *  Constructor
    *  This just calls the superclass constructor, which is "Object"
    */
-   public ClockSolverEmpty() {
+   public ClockSolver() {
       super();
    }
 
@@ -38,21 +38,6 @@ public class ClockSolverEmpty {
    *  Method to handle all the input arguments from the command line
    *   this sets up the variables for the simulation
    */
-   public void handleInitialArguments( String args[] ) {
-     // args[0] specifies the angle for which you are looking
-     //  your simulation will find all the angles in the 12-hour day at which those angles occur
-     // args[1] if present will specify a time slice value; if not present, defaults to 60 seconds
-     // you may want to consider using args[2] for an "angle window"
-
-      System.out.println( "\n   Hello world, from the ClockSolver program!!\n\n" ) ;
-      if( 0 == args.length ) {
-         System.out.println( "   Sorry you must enter at least one argument\n" +
-                             "   Usage: java ClockSolver <angle> [timeSlice]\n" +
-                             "   Please try again..........." );
-         System.exit( 1 );
-      }
-      Clock clock = new Clock();
-   }
 
   /**
    *  The main program starts here
@@ -63,12 +48,31 @@ public class ClockSolverEmpty {
    *                args[1] is the time slice; this is optional and defaults to 60 seconds
    */
    public static void main( String args[] ) {
-      ClockSolverEmpty cse = new ClockSolverEmpty();
-      ClockEmpty clock    = new ClockEmpty();
-      double[] timeValues = new double[3];
-      cse.handleInitialArguments( args );
-      while( true ) {
-         break;
+      System.out.println( "\n   Hello world, from the ClockSolver program!!\n\n" ) ;
+      ClockSolver cs = new ClockSolver();
+      Clock clock = new Clock();
+      if( 0 == args.length ){
+         System.out.println( "   Sorry you must enter at least one argument\n" +
+                             "   Usage: java ClockSolver <angle> [timeSlice]\n" +
+                             "   Please try again..........." );
+         System.exit( 1 );
+      }
+      else if (1 == args.length) {
+        clock.timeSlice = clock.validateTimeSliceArg("60.0");
+      }
+      else if (2 == args.length) {
+        clock.timeSlice = clock.validateTimeSliceArg(args[1]);
+      }
+      System.out.println( "\n\n         Your Simulation is now running:");
+      System.out.println( "         ----------------------------------");
+      System.out.println( "         looking for angles of " + clock.validateAngleArg(args[0]) );
+      System.out.println( "         with a time slice of " + clock.timeSlice);
+
+      while( false == clock.timeElapsed() ) {
+         if ( Math.abs( Double.parseDouble(args[0]) - clock.getHandAngle() ) <= .1 ) {
+           System.out.println("Found target angle of " + clock.validateTimeSliceArg(args[0]) + " at time: " + clock.toString());
+         }
+         clock.tick();
       }
       System.exit( 0 );
    }
