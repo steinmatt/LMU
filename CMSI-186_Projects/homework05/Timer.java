@@ -13,7 +13,9 @@
  *  ----------------
  *            Rev      Date     Modified by:  Reason for change/modification
  *           -----  ----------  ------------  -----------------------------------------------------------
- *  @version 1.0.0  2017-03-15  Matt Stein    Initial Code Writing and Method Selection
+ *  @version 1.0.0  2018-03-15  Matt Stein    Initial Code Writing and Method Selection
+ *  @version 1.1.0  2018-03-20  Matt Stein    Finalized timer class. 
+ *  @version 1.1.1  2018-03-27  Matt Stein    Added method descriptions 
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 
@@ -25,22 +27,19 @@ public class Timer {
   public double currentSecs;
   public double timeSlice = 1.0;
 
+  /**
+   * Method to increase the total elapsed time on the clock
+   * NOTE: Increases at a rate according to the time slice.
+   * NOTE: Also updates currentSecs, currentMins currentHours to match current specs.
+   * 
+   * @return String affirmation that each Ball's velocity has been updated.
+   */
+
   public double tick() {
      currentTime = currentTime + timeSlice;
      currentSecs = currentTime % 60;
      currentMins = (int) (currentTime / 60) % 60;
      currentHours = (int) currentTime / 3600 % 1;
-     //for (double i = 0; i < timeSlice; i++){
-    //   currentSecs += 1;
-    //   if (currentSecs == 60) {
-    //     currentMins += 1;
-    //     if (currentMins == 60) {
-    //       currentHours += 1;
-    //       currentMins = 0;
-    //     }
-    //     currentSecs = 0;
-    //   }
-     //}
      return currentTime;
   }
 
