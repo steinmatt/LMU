@@ -15,8 +15,9 @@
  *  ----------------
  *            Rev      Date     Modified by:  Reason for change/modification
  *           -----  ----------  ------------  -----------------------------------------------------------
- *  @version 1.0.0  2017-03-15  Matt Stein    Initial Code Writing and Method Selection
- *  @version 1.1.0  2018-03-20  Matt Stein    Final Code completion /
+ *  @version 1.0.0  2018-03-15  Matt Stein    Initial Code Writing and Method Selection
+ *  @version 1.1.0  2018-03-20  Matt Stein    Final Code completion 
+ *  @version 1.1.1  2018-03-27  Matt Stein    Added method descriptions 
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
  public class Ball {
 
@@ -49,22 +50,24 @@
         yVelocity = yVel;
     }
 
+    /**
+     * To String representation of current Ball class
+     *
+     * @return Position: <xPosition, yPosition> with Velocity: <xVelocity, yVelocity>.
+     */
 
     public String toString() {
        return "Position: <" + xPosition + ", " + yPosition + ">    with  Velocity: <" + xVelocity + ", " + yVelocity + ">";
     }
 
+    /**
+     * Validates ball presence on soccer field
+     * NOTE: Uses field dimensions set up in SoccerSim
+     *
+     * @return true/false if ball is present/not present.
+     */
     public boolean validateBallPresence() {
       if ( (xPosition > SoccerSim.FIELD_LENGTH/2) || (xPosition < -1*SoccerSim.FIELD_LENGTH/2) ||  (yPosition > SoccerSim.FIELD_HEIGHT/2) || (yPosition < -1*SoccerSim.FIELD_HEIGHT/2) ){
-        return false;
-      }
-      else {
-        return true;
-      }
-    }
-
-    public boolean validateBallMovement() {
-      if ( (0 == xVelocity ) && (0 == yVelocity) ){
         return false;
       }
       else {
