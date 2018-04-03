@@ -1,0 +1,2917 @@
+.
+.
+======================================
+... Testing Ball class ...
+======================================
+.
+.
+.
+.
+======================================
+... Testing timer class ...
+======================================
+.
+.
+======================================
+... Testing SoccerSim no args...
+======================================
+   Sorry you must create at least one ball.
+   Usage: java SoccerSim <xPosition> <yPosition> <xVelocity> <yVelocity> [timeSlice]
+   Please try again...........
+.
+.
+======================================
+... Testing SoccerSim one arg...
+======================================
+   Sorry you must create at least one ball.
+   Usage: java SoccerSim <xPosition> <yPosition> <xVelocity> <yVelocity> [timeSlice]
+   Please try again...........
+.
+.
+======================================
+... Testing SoccerSim two args...
+======================================
+   Sorry you must create at least one ball.
+   Usage: java SoccerSim <xPosition> <yPosition> <xVelocity> <yVelocity> [timeSlice]
+   Please try again...........
+.
+.
+======================================
+... Testing SoccerSim three args...
+======================================
+   Sorry you must create at least one ball.
+   Usage: java SoccerSim <xPosition> <yPosition> <xVelocity> <yVelocity> [timeSlice]
+   Please try again...........
+.
+.
+======================================
+... Testing SoccerSim six args...
+======================================
+ Sorry, something went wrong. Please check your input sequence.
+   Usage: java SoccerSim <xPosition> <yPosition> <xVelocity> <yVelocity> [timeSlice]
+   Please try again...........
+.
+.
+======================================
+... Testing SoccerSim out of bounds...
+======================================
+Simulation Beginning:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Initial Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:0.0.    (hrs:mins:secs)
+0:                   Position: <1100.0, 1100.0>    with  Velocity: <99.0, 99.0>.
+
+Simulation End:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Elapsed Time:               0.0:0.0:0.0.    (hrs:mins:secs)
+.
+.
+======================================
+... Testing SoccerSim negative time slice...
+======================================
+.
+.
+======================================
+... Testing SoccerSim time slice too large...
+======================================
+Simulation Beginning:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Initial Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:0.0.    (hrs:mins:secs)
+0:                   Position: <10.0, 10.0>    with  Velocity: <5.0, 5.0>.
+
+Simulation End:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Elapsed Time:               0.0:0.0:0.0.    (hrs:mins:secs)
+.
+.
+======================================
+... Testing SoccerSim time slice value of zero...
+======================================
+.
+.
+======================================
+... Testing SoccerSim check for collision...
+======================================
+Simulation Beginning:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Initial Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:0.0.    (hrs:mins:secs)
+0:                   Position: <10.0, 10.0>    with  Velocity: <1.0, 1.0>.
+
+1:                   Position: <20.0, 20.0>    with  Velocity: <-1.0, -1.0>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:1.0.    (hrs:mins:secs)
+0:                 Position: <10.098999999999945, 10.098999999999945>    with  Velocity: <0.99, 0.99>.
+
+1:                 Position: <19.90099999999988, 19.90099999999988>    with  Velocity: <-0.99, -0.99>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:2.0.    (hrs:mins:secs)
+0:                 Position: <10.197999999999928, 10.197999999999928>    with  Velocity: <0.9801, 0.9801>.
+
+1:                 Position: <19.80199999999972, 19.80199999999972>    with  Velocity: <-0.9801, -0.9801>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:3.0.    (hrs:mins:secs)
+0:                 Position: <10.296990099999887, 10.296990099999887>    with  Velocity: <0.970299, 0.970299>.
+
+1:                 Position: <19.70300989999976, 19.70300989999976>    with  Velocity: <-0.970299, -0.970299>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:4.0.    (hrs:mins:secs)
+0:                 Position: <10.394019999999932, 10.394019999999932>    with  Velocity: <0.9605960100000001, 0.9605960100000001>.
+
+1:                 Position: <19.605979999999892, 19.605979999999892>    with  Velocity: <-0.9605960100000001, -0.9605960100000001>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:5.0.    (hrs:mins:secs)
+0:                 Position: <10.490079600999897, 10.490079600999897>    with  Velocity: <0.9509900499, 0.9509900499>.
+
+1:                 Position: <19.509920398999927, 19.509920398999927>    with  Velocity: <-0.9509900499, -0.9509900499>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:6.0.    (hrs:mins:secs)
+0:                 Position: <10.585178605989837, 10.585178605989837>    with  Velocity: <0.941480149401, 0.941480149401>.
+
+1:                 Position: <19.41482139400981, 19.41482139400981>    with  Velocity: <-0.941480149401, -0.941480149401>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:7.0.    (hrs:mins:secs)
+0:                 Position: <10.679326620929869, 10.679326620929869>    with  Velocity: <0.93206534790699, 0.93206534790699>.
+
+1:                 Position: <19.320673379069778, 19.320673379069778>    with  Velocity: <-0.93206534790699, -0.93206534790699>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:8.0.    (hrs:mins:secs)
+0:                 Position: <10.772533155720593, 10.772533155720593>    with  Velocity: <0.9227446944279202, 0.9227446944279202>.
+
+1:                 Position: <19.227466844279054, 19.227466844279054>    with  Velocity: <-0.9227446944279202, -0.9227446944279202>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:9.0.    (hrs:mins:secs)
+0:                 Position: <10.864807625163392, 10.864807625163392>    with  Velocity: <0.9135172474836409, 0.9135172474836409>.
+
+1:                 Position: <19.135192374836254, 19.135192374836254>    with  Velocity: <-0.9135172474836409, -0.9135172474836409>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:10.0.    (hrs:mins:secs)
+0:                 Position: <10.95615934991167, 10.95615934991167>    with  Velocity: <0.9043820750088045, 0.9043820750088045>.
+
+1:                 Position: <19.043840650087976, 19.043840650087976>    with  Velocity: <-0.9043820750088045, -0.9043820750088045>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:11.0.    (hrs:mins:secs)
+0:                 Position: <11.046597557412502, 11.046597557412502>    with  Velocity: <0.8953382542587165, 0.8953382542587165>.
+
+1:                 Position: <18.953402442586967, 18.953402442586967>    with  Velocity: <-0.8953382542587165, -0.8953382542587165>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:12.0.    (hrs:mins:secs)
+0:                 Position: <11.136131382838327, 11.136131382838327>    with  Velocity: <0.8863848717161293, 0.8863848717161293>.
+
+1:                 Position: <18.863868617160964, 18.863868617160964>    with  Velocity: <-0.8863848717161293, -0.8863848717161293>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:13.0.    (hrs:mins:secs)
+0:                 Position: <11.224769870009949, 11.224769870009949>    with  Velocity: <0.8775210229989681, 0.8775210229989681>.
+
+1:                 Position: <18.775230129989342, 18.775230129989342>    with  Velocity: <-0.8775210229989681, -0.8775210229989681>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:14.0.    (hrs:mins:secs)
+0:                 Position: <11.312521972309758, 11.312521972309758>    with  Velocity: <0.8687458127689783, 0.8687458127689783>.
+
+1:                 Position: <18.687478027689355, 18.687478027689355>    with  Velocity: <-0.8687458127689783, -0.8687458127689783>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:15.0.    (hrs:mins:secs)
+0:                 Position: <11.39939655358661, 11.39939655358661>    with  Velocity: <0.8600583546412885, 0.8600583546412885>.
+
+1:                 Position: <18.600603446412325, 18.600603446412325>    with  Velocity: <-0.8600583546412885, -0.8600583546412885>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:16.0.    (hrs:mins:secs)
+0:                 Position: <11.485402389050753, 11.485402389050753>    with  Velocity: <0.8514577710948756, 0.8514577710948756>.
+
+1:                 Position: <18.51459761094836, 18.51459761094836>    with  Velocity: <-0.8514577710948756, -0.8514577710948756>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:17.0.    (hrs:mins:secs)
+0:                 Position: <11.570548166160227, 11.570548166160227>    with  Velocity: <0.8429431933839269, 0.8429431933839269>.
+
+1:                 Position: <18.429451833838886, 18.429451833838886>    with  Velocity: <-0.8429431933839269, -0.8429431933839269>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:18.0.    (hrs:mins:secs)
+0:                 Position: <11.653999542305185, 11.653999542305185>    with  Velocity: <0.8345137614500876, 0.8345137614500876>.
+
+1:                 Position: <18.34600045769393, 18.34600045769393>    with  Velocity: <-0.8345137614500876, -0.8345137614500876>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:19.0.    (hrs:mins:secs)
+0:                 Position: <11.737450918450234, 11.737450918450234>    with  Velocity: <0.8261686238355868, 0.8261686238355868>.
+
+1:                 Position: <18.26254908154888, 18.26254908154888>    with  Velocity: <-0.8261686238355868, -0.8261686238355868>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:20.0.    (hrs:mins:secs)
+0:                 Position: <11.820067780833723, 11.820067780833723>    with  Velocity: <0.8179069375972309, 0.8179069375972309>.
+
+1:                 Position: <18.17993221916539, 18.17993221916539>    with  Velocity: <-0.8179069375972309, -0.8179069375972309>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:21.0.    (hrs:mins:secs)
+0:                 Position: <11.901858474593388, 11.901858474593388>    with  Velocity: <0.8097278682212585, 0.8097278682212585>.
+
+1:                 Position: <18.09814152540555, 18.09814152540555>    with  Velocity: <-0.8097278682212585, -0.8097278682212585>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:22.0.    (hrs:mins:secs)
+0:                 Position: <11.982831261415496, 11.982831261415496>    with  Velocity: <0.801630589539046, 0.801630589539046>.
+
+1:                 Position: <18.017168738583262, 18.017168738583262>    with  Velocity: <-0.801630589539046, -0.801630589539046>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:23.0.    (hrs:mins:secs)
+0:                 Position: <12.062994320369382, 12.062994320369382>    with  Velocity: <0.7936142836436555, 0.7936142836436555>.
+
+1:                 Position: <17.937005679629376, 17.937005679629376>    with  Velocity: <-0.7936142836436555, -0.7936142836436555>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:24.0.    (hrs:mins:secs)
+0:                 Position: <12.142355748733804, 12.142355748733804>    with  Velocity: <0.785678140807219, 0.785678140807219>.
+
+1:                 Position: <17.857644251264954, 17.857644251264954>    with  Velocity: <-0.785678140807219, -0.785678140807219>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:25.0.    (hrs:mins:secs)
+0:                 Position: <12.220923562814603, 12.220923562814603>    with  Velocity: <0.7778213593991468, 0.7778213593991468>.
+
+1:                 Position: <17.779076437184155, 17.779076437184155>    with  Velocity: <-0.7778213593991468, -0.7778213593991468>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:26.0.    (hrs:mins:secs)
+0:                 Position: <12.298705698754544, 12.298705698754544>    with  Velocity: <0.7700431458051553, 0.7700431458051553>.
+
+1:                 Position: <17.701294301244214, 17.701294301244214>    with  Velocity: <-0.7700431458051553, -0.7700431458051553>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:27.0.    (hrs:mins:secs)
+0:                 Position: <12.375710013334986, 12.375710013334986>    with  Velocity: <0.7623427143471038, 0.7623427143471038>.
+
+1:                 Position: <17.624289986663594, 17.624289986663594>    with  Velocity: <-0.7623427143471038, -0.7623427143471038>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:28.0.    (hrs:mins:secs)
+0:                 Position: <12.451944284769736, 12.451944284769736>    with  Velocity: <0.7547192872036327, 0.7547192872036327>.
+
+1:                 Position: <17.548055715229022, 17.548055715229022>    with  Velocity: <-0.7547192872036327, -0.7547192872036327>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:29.0.    (hrs:mins:secs)
+0:                 Position: <12.527416213490019, 12.527416213490019>    with  Velocity: <0.7471720943315964, 0.7471720943315964>.
+
+1:                 Position: <17.47258378650856, 17.47258378650856>    with  Velocity: <-0.7471720943315964, -0.7471720943315964>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:30.0.    (hrs:mins:secs)
+0:                 Position: <12.602133422923236, 12.602133422923236>    with  Velocity: <0.7397003733882804, 0.7397003733882804>.
+
+1:                 Position: <17.397866577075344, 17.397866577075344>    with  Velocity: <-0.7397003733882804, -0.7397003733882804>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:31.0.    (hrs:mins:secs)
+0:                 Position: <12.676103460262125, 12.676103460262125>    with  Velocity: <0.7323033696543976, 0.7323033696543976>.
+
+1:                 Position: <17.323896539736634, 17.323896539736634>    with  Velocity: <-0.7323033696543976, -0.7323033696543976>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:32.0.    (hrs:mins:secs)
+0:                 Position: <12.749333797227527, 12.749333797227527>    with  Velocity: <0.7249803359578536, 0.7249803359578536>.
+
+1:                 Position: <17.250666202771054, 17.250666202771054>    with  Velocity: <-0.7249803359578536, -0.7249803359578536>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:33.0.    (hrs:mins:secs)
+0:                 Position: <12.82183183082334, 12.82183183082334>    with  Velocity: <0.717730532598275, 0.717730532598275>.
+
+1:                 Position: <17.178168169175418, 17.178168169175418>    with  Velocity: <-0.717730532598275, -0.717730532598275>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:34.0.    (hrs:mins:secs)
+0:                 Position: <12.893604884083123, 12.893604884083123>    with  Velocity: <0.7105532272722923, 0.7105532272722923>.
+
+1:                 Position: <17.106395115915458, 17.106395115915458>    with  Velocity: <-0.7105532272722923, -0.7105532272722923>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:35.0.    (hrs:mins:secs)
+0:                 Position: <12.964660206810299, 12.964660206810299>    with  Velocity: <0.7034476949995694, 0.7034476949995694>.
+
+1:                 Position: <17.03533979318828, 17.03533979318828>    with  Velocity: <-0.7034476949995694, -0.7034476949995694>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:36.0.    (hrs:mins:secs)
+0:                 Position: <13.035004976310196, 13.035004976310196>    with  Velocity: <0.6964132180495737, 0.6964132180495737>.
+
+1:                 Position: <16.964995023688385, 16.964995023688385>    with  Velocity: <-0.6964132180495737, -0.6964132180495737>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:37.0.    (hrs:mins:secs)
+0:                 Position: <13.104646298115155, 13.104646298115155>    with  Velocity: <0.6894490858690779, 0.6894490858690779>.
+
+1:                 Position: <16.895353701883604, 16.895353701883604>    with  Velocity: <-0.6894490858690779, -0.6894490858690779>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:38.0.    (hrs:mins:secs)
+0:                 Position: <13.173591206701998, 13.173591206701998>    with  Velocity: <0.6825545950103872, 0.6825545950103872>.
+
+1:                 Position: <16.82640879329676, 16.82640879329676>    with  Velocity: <-0.6825545950103872, -0.6825545950103872>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:39.0.    (hrs:mins:secs)
+0:                 Position: <13.241846666203108, 13.241846666203108>    with  Velocity: <0.6757290490602833, 0.6757290490602833>.
+
+1:                 Position: <16.75815333379583, 16.75815333379583>    with  Velocity: <-0.6757290490602833, -0.6757290490602833>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:40.0.    (hrs:mins:secs)
+0:                 Position: <13.309419571109151, 13.309419571109151>    with  Velocity: <0.6689717585696805, 0.6689717585696805>.
+
+1:                 Position: <16.690580428889785, 16.690580428889785>    with  Velocity: <-0.6689717585696805, -0.6689717585696805>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:41.0.    (hrs:mins:secs)
+0:                 Position: <13.376316746966124, 13.376316746966124>    with  Velocity: <0.6622820409839837, 0.6622820409839837>.
+
+1:                 Position: <16.62368325303299, 16.62368325303299>    with  Velocity: <-0.6622820409839837, -0.6622820409839837>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:42.0.    (hrs:mins:secs)
+0:                 Position: <13.442544951064574, 13.442544951064574>    with  Velocity: <0.6556592205741438, 0.6556592205741438>.
+
+1:                 Position: <16.55745504893454, 16.55745504893454>    with  Velocity: <-0.6556592205741438, -0.6556592205741438>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:43.0.    (hrs:mins:secs)
+0:                 Position: <13.508110873121906, 13.508110873121906>    with  Velocity: <0.6491026283684024, 0.6491026283684024>.
+
+1:                 Position: <16.491889126877208, 16.491889126877208>    with  Velocity: <-0.6491026283684024, -0.6491026283684024>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:44.0.    (hrs:mins:secs)
+0:                 Position: <13.573670238587178, 13.573670238587178>    with  Velocity: <0.6426116020847183, 0.6426116020847183>.
+
+1:                 Position: <16.426329761411935, 16.426329761411935>    with  Velocity: <-0.6426116020847183, -0.6426116020847183>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:45.0.    (hrs:mins:secs)
+0:                 Position: <13.637931398795724, 13.637931398795724>    with  Velocity: <0.6361854860638712, 0.6361854860638712>.
+
+1:                 Position: <16.36206860120339, 16.36206860120339>    with  Velocity: <-0.6361854860638712, -0.6361854860638712>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:46.0.    (hrs:mins:secs)
+0:                 Position: <13.701549947402116, 13.701549947402116>    with  Velocity: <0.6298236312032325, 0.6298236312032325>.
+
+1:                 Position: <16.298450052597175, 16.298450052597175>    with  Velocity: <-0.6298236312032325, -0.6298236312032325>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:47.0.    (hrs:mins:secs)
+0:                 Position: <13.764532310522528, 13.764532310522528>    with  Velocity: <0.6235253948912002, 0.6235253948912002>.
+
+1:                 Position: <16.235467689476764, 16.235467689476764>    with  Velocity: <-0.6235253948912002, -0.6235253948912002>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:48.0.    (hrs:mins:secs)
+0:                 Position: <13.826884850011647, 13.826884850011647>    with  Velocity: <0.6172901409422882, 0.6172901409422882>.
+
+1:                 Position: <16.173115149987467, 16.173115149987467>    with  Velocity: <-0.6172901409422882, -0.6172901409422882>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:49.0.    (hrs:mins:secs)
+0:                 Position: <13.888613864105894, 13.888613864105894>    with  Velocity: <0.6111172395328653, 0.6111172395328653>.
+
+1:                 Position: <16.111386135893397, 16.111386135893397>    with  Velocity: <-0.6111172395328653, -0.6111172395328653>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:50.0.    (hrs:mins:secs)
+0:                 Position: <13.949725588059183, 13.949725588059183>    with  Velocity: <0.6050060671375367, 0.6050060671375367>.
+
+1:                 Position: <16.05027441194011, 16.05027441194011>    with  Velocity: <-0.6050060671375367, -0.6050060671375367>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:51.0.    (hrs:mins:secs)
+0:                 Position: <14.010226194772992, 14.010226194772992>    with  Velocity: <0.5989560064661613, 0.5989560064661613>.
+
+1:                 Position: <15.989773805226447, 15.989773805226447>    with  Velocity: <-0.5989560064661613, -0.5989560064661613>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:52.0.    (hrs:mins:secs)
+0:                 Position: <14.07012179541969, 14.07012179541969>    with  Velocity: <0.5929664464014998, 0.5929664464014998>.
+
+1:                 Position: <15.92987820457975, 15.92987820457975>    with  Velocity: <-0.5929664464014998, -0.5929664464014998>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:53.0.    (hrs:mins:secs)
+0:                 Position: <14.129418440059817, 14.129418440059817>    with  Velocity: <0.5870367819374848, 0.5870367819374848>.
+
+1:                 Position: <15.870581559939621, 15.870581559939621>    with  Velocity: <-0.5870367819374848, -0.5870367819374848>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:54.0.    (hrs:mins:secs)
+0:                 Position: <14.188122118253512, 14.188122118253512>    with  Velocity: <0.5811664141181099, 0.5811664141181099>.
+
+1:                 Position: <15.811877881745927, 15.811877881745927>    with  Velocity: <-0.5811664141181099, -0.5811664141181099>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:55.0.    (hrs:mins:secs)
+0:                 Position: <14.246238759665355, 14.246238759665355>    with  Velocity: <0.5753547499769288, 0.5753547499769288>.
+
+1:                 Position: <15.753761240334084, 15.753761240334084>    with  Velocity: <-0.5753547499769288, -0.5753547499769288>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:56.0.    (hrs:mins:secs)
+0:                 Position: <14.303774234663004, 14.303774234663004>    with  Velocity: <0.5696012024771595, 0.5696012024771595>.
+
+1:                 Position: <15.696225765336434, 15.696225765336434>    with  Velocity: <-0.5696012024771595, -0.5696012024771595>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:57.0.    (hrs:mins:secs)
+0:                 Position: <14.360734354910678, 14.360734354910678>    with  Velocity: <0.563905190452388, 0.563905190452388>.
+
+1:                 Position: <15.639265645088761, 15.639265645088761>    with  Velocity: <-0.563905190452388, -0.563905190452388>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:58.0.    (hrs:mins:secs)
+0:                 Position: <14.41712487395588, 14.41712487395588>    with  Velocity: <0.5582661385478641, 0.5582661385478641>.
+
+1:                 Position: <15.58287512604356, 15.58287512604356>    with  Velocity: <-0.5582661385478641, -0.5582661385478641>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:59.0.    (hrs:mins:secs)
+0:                 Position: <14.472951487810628, 14.472951487810628>    with  Velocity: <0.5526834771623854, 0.5526834771623854>.
+
+1:                 Position: <15.527048512188811, 15.527048512188811>    with  Velocity: <-0.5526834771623854, -0.5526834771623854>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:0.0.    (hrs:mins:secs)
+0:                 Position: <14.528219835526814, 14.528219835526814>    with  Velocity: <0.5471566423907616, 0.5471566423907616>.
+
+1:                 Position: <15.471780164472625, 15.471780164472625>    with  Velocity: <-0.5471566423907616, -0.5471566423907616>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:1.0.    (hrs:mins:secs)
+0:                 Position: <14.582935499765883, 14.582935499765883>    with  Velocity: <0.5416850759668539, 0.5416850759668539>.
+
+1:                 Position: <15.417064500233556, 15.417064500233556>    with  Velocity: <-0.5416850759668539, -0.5416850759668539>.
+
+Simulation End:                    COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Time:                 0.0:1.0:2.0.    (hrs:mins:secs)
+CONTACT:     Between Ball 0 & Ball 1 at: Position:   <14.6295204162991, 14.6295204162991>.
+.
+.
+======================================
+... Testing SoccerSim valid ball should come to rest...
+======================================
+Simulation Beginning:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Initial Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:0.0.    (hrs:mins:secs)
+0:                   Position: <10.0, 10.0>    with  Velocity: <1.0, 1.0>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:1.0.    (hrs:mins:secs)
+0:                 Position: <10.098999999999945, 10.098999999999945>    with  Velocity: <0.99, 0.99>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:2.0.    (hrs:mins:secs)
+0:                 Position: <10.197999999999928, 10.197999999999928>    with  Velocity: <0.9801, 0.9801>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:3.0.    (hrs:mins:secs)
+0:                 Position: <10.296990099999887, 10.296990099999887>    with  Velocity: <0.970299, 0.970299>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:4.0.    (hrs:mins:secs)
+0:                 Position: <10.394019999999932, 10.394019999999932>    with  Velocity: <0.9605960100000001, 0.9605960100000001>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:5.0.    (hrs:mins:secs)
+0:                 Position: <10.490079600999897, 10.490079600999897>    with  Velocity: <0.9509900499, 0.9509900499>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:6.0.    (hrs:mins:secs)
+0:                 Position: <10.585178605989837, 10.585178605989837>    with  Velocity: <0.941480149401, 0.941480149401>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:7.0.    (hrs:mins:secs)
+0:                 Position: <10.679326620929869, 10.679326620929869>    with  Velocity: <0.93206534790699, 0.93206534790699>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:8.0.    (hrs:mins:secs)
+0:                 Position: <10.772533155720593, 10.772533155720593>    with  Velocity: <0.9227446944279202, 0.9227446944279202>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:9.0.    (hrs:mins:secs)
+0:                 Position: <10.864807625163392, 10.864807625163392>    with  Velocity: <0.9135172474836409, 0.9135172474836409>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:10.0.    (hrs:mins:secs)
+0:                 Position: <10.95615934991167, 10.95615934991167>    with  Velocity: <0.9043820750088045, 0.9043820750088045>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:11.0.    (hrs:mins:secs)
+0:                 Position: <11.046597557412502, 11.046597557412502>    with  Velocity: <0.8953382542587165, 0.8953382542587165>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:12.0.    (hrs:mins:secs)
+0:                 Position: <11.136131382838327, 11.136131382838327>    with  Velocity: <0.8863848717161293, 0.8863848717161293>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:13.0.    (hrs:mins:secs)
+0:                 Position: <11.224769870009949, 11.224769870009949>    with  Velocity: <0.8775210229989681, 0.8775210229989681>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:14.0.    (hrs:mins:secs)
+0:                 Position: <11.312521972309758, 11.312521972309758>    with  Velocity: <0.8687458127689783, 0.8687458127689783>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:15.0.    (hrs:mins:secs)
+0:                 Position: <11.39939655358661, 11.39939655358661>    with  Velocity: <0.8600583546412885, 0.8600583546412885>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:16.0.    (hrs:mins:secs)
+0:                 Position: <11.485402389050753, 11.485402389050753>    with  Velocity: <0.8514577710948756, 0.8514577710948756>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:17.0.    (hrs:mins:secs)
+0:                 Position: <11.570548166160227, 11.570548166160227>    with  Velocity: <0.8429431933839269, 0.8429431933839269>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:18.0.    (hrs:mins:secs)
+0:                 Position: <11.653999542305185, 11.653999542305185>    with  Velocity: <0.8345137614500876, 0.8345137614500876>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:19.0.    (hrs:mins:secs)
+0:                 Position: <11.737450918450234, 11.737450918450234>    with  Velocity: <0.8261686238355868, 0.8261686238355868>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:20.0.    (hrs:mins:secs)
+0:                 Position: <11.820067780833723, 11.820067780833723>    with  Velocity: <0.8179069375972309, 0.8179069375972309>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:21.0.    (hrs:mins:secs)
+0:                 Position: <11.901858474593388, 11.901858474593388>    with  Velocity: <0.8097278682212585, 0.8097278682212585>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:22.0.    (hrs:mins:secs)
+0:                 Position: <11.982831261415496, 11.982831261415496>    with  Velocity: <0.801630589539046, 0.801630589539046>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:23.0.    (hrs:mins:secs)
+0:                 Position: <12.062994320369382, 12.062994320369382>    with  Velocity: <0.7936142836436555, 0.7936142836436555>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:24.0.    (hrs:mins:secs)
+0:                 Position: <12.142355748733804, 12.142355748733804>    with  Velocity: <0.785678140807219, 0.785678140807219>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:25.0.    (hrs:mins:secs)
+0:                 Position: <12.220923562814603, 12.220923562814603>    with  Velocity: <0.7778213593991468, 0.7778213593991468>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:26.0.    (hrs:mins:secs)
+0:                 Position: <12.298705698754544, 12.298705698754544>    with  Velocity: <0.7700431458051553, 0.7700431458051553>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:27.0.    (hrs:mins:secs)
+0:                 Position: <12.375710013334986, 12.375710013334986>    with  Velocity: <0.7623427143471038, 0.7623427143471038>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:28.0.    (hrs:mins:secs)
+0:                 Position: <12.451944284769736, 12.451944284769736>    with  Velocity: <0.7547192872036327, 0.7547192872036327>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:29.0.    (hrs:mins:secs)
+0:                 Position: <12.527416213490019, 12.527416213490019>    with  Velocity: <0.7471720943315964, 0.7471720943315964>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:30.0.    (hrs:mins:secs)
+0:                 Position: <12.602133422923236, 12.602133422923236>    with  Velocity: <0.7397003733882804, 0.7397003733882804>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:31.0.    (hrs:mins:secs)
+0:                 Position: <12.676103460262125, 12.676103460262125>    with  Velocity: <0.7323033696543976, 0.7323033696543976>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:32.0.    (hrs:mins:secs)
+0:                 Position: <12.749333797227527, 12.749333797227527>    with  Velocity: <0.7249803359578536, 0.7249803359578536>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:33.0.    (hrs:mins:secs)
+0:                 Position: <12.82183183082334, 12.82183183082334>    with  Velocity: <0.717730532598275, 0.717730532598275>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:34.0.    (hrs:mins:secs)
+0:                 Position: <12.893604884083123, 12.893604884083123>    with  Velocity: <0.7105532272722923, 0.7105532272722923>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:35.0.    (hrs:mins:secs)
+0:                 Position: <12.964660206810299, 12.964660206810299>    with  Velocity: <0.7034476949995694, 0.7034476949995694>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:36.0.    (hrs:mins:secs)
+0:                 Position: <13.035004976310196, 13.035004976310196>    with  Velocity: <0.6964132180495737, 0.6964132180495737>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:37.0.    (hrs:mins:secs)
+0:                 Position: <13.104646298115155, 13.104646298115155>    with  Velocity: <0.6894490858690779, 0.6894490858690779>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:38.0.    (hrs:mins:secs)
+0:                 Position: <13.173591206701998, 13.173591206701998>    with  Velocity: <0.6825545950103872, 0.6825545950103872>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:39.0.    (hrs:mins:secs)
+0:                 Position: <13.241846666203108, 13.241846666203108>    with  Velocity: <0.6757290490602833, 0.6757290490602833>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:40.0.    (hrs:mins:secs)
+0:                 Position: <13.309419571109151, 13.309419571109151>    with  Velocity: <0.6689717585696805, 0.6689717585696805>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:41.0.    (hrs:mins:secs)
+0:                 Position: <13.376316746966124, 13.376316746966124>    with  Velocity: <0.6622820409839837, 0.6622820409839837>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:42.0.    (hrs:mins:secs)
+0:                 Position: <13.442544951064574, 13.442544951064574>    with  Velocity: <0.6556592205741438, 0.6556592205741438>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:43.0.    (hrs:mins:secs)
+0:                 Position: <13.508110873121906, 13.508110873121906>    with  Velocity: <0.6491026283684024, 0.6491026283684024>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:44.0.    (hrs:mins:secs)
+0:                 Position: <13.573670238587178, 13.573670238587178>    with  Velocity: <0.6426116020847183, 0.6426116020847183>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:45.0.    (hrs:mins:secs)
+0:                 Position: <13.637931398795724, 13.637931398795724>    with  Velocity: <0.6361854860638712, 0.6361854860638712>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:46.0.    (hrs:mins:secs)
+0:                 Position: <13.701549947402116, 13.701549947402116>    with  Velocity: <0.6298236312032325, 0.6298236312032325>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:47.0.    (hrs:mins:secs)
+0:                 Position: <13.764532310522528, 13.764532310522528>    with  Velocity: <0.6235253948912002, 0.6235253948912002>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:48.0.    (hrs:mins:secs)
+0:                 Position: <13.826884850011647, 13.826884850011647>    with  Velocity: <0.6172901409422882, 0.6172901409422882>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:49.0.    (hrs:mins:secs)
+0:                 Position: <13.888613864105894, 13.888613864105894>    with  Velocity: <0.6111172395328653, 0.6111172395328653>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:50.0.    (hrs:mins:secs)
+0:                 Position: <13.949725588059183, 13.949725588059183>    with  Velocity: <0.6050060671375367, 0.6050060671375367>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:51.0.    (hrs:mins:secs)
+0:                 Position: <14.010226194772992, 14.010226194772992>    with  Velocity: <0.5989560064661613, 0.5989560064661613>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:52.0.    (hrs:mins:secs)
+0:                 Position: <14.07012179541969, 14.07012179541969>    with  Velocity: <0.5929664464014998, 0.5929664464014998>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:53.0.    (hrs:mins:secs)
+0:                 Position: <14.129418440059817, 14.129418440059817>    with  Velocity: <0.5870367819374848, 0.5870367819374848>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:54.0.    (hrs:mins:secs)
+0:                 Position: <14.188122118253512, 14.188122118253512>    with  Velocity: <0.5811664141181099, 0.5811664141181099>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:55.0.    (hrs:mins:secs)
+0:                 Position: <14.246238759665355, 14.246238759665355>    with  Velocity: <0.5753547499769288, 0.5753547499769288>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:56.0.    (hrs:mins:secs)
+0:                 Position: <14.303774234663004, 14.303774234663004>    with  Velocity: <0.5696012024771595, 0.5696012024771595>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:57.0.    (hrs:mins:secs)
+0:                 Position: <14.360734354910678, 14.360734354910678>    with  Velocity: <0.563905190452388, 0.563905190452388>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:58.0.    (hrs:mins:secs)
+0:                 Position: <14.41712487395588, 14.41712487395588>    with  Velocity: <0.5582661385478641, 0.5582661385478641>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:59.0.    (hrs:mins:secs)
+0:                 Position: <14.472951487810628, 14.472951487810628>    with  Velocity: <0.5526834771623854, 0.5526834771623854>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:0.0.    (hrs:mins:secs)
+0:                 Position: <14.528219835526814, 14.528219835526814>    with  Velocity: <0.5471566423907616, 0.5471566423907616>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:1.0.    (hrs:mins:secs)
+0:                 Position: <14.582935499765883, 14.582935499765883>    with  Velocity: <0.5416850759668539, 0.5416850759668539>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:2.0.    (hrs:mins:secs)
+0:                 Position: <14.637104007362646, 14.637104007362646>    with  Velocity: <0.5362682252071853, 0.5362682252071853>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:3.0.    (hrs:mins:secs)
+0:                 Position: <14.690730829883416, 14.690730829883416>    with  Velocity: <0.5309055429551135, 0.5309055429551135>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:4.0.    (hrs:mins:secs)
+0:                 Position: <14.74382138417898, 14.74382138417898>    with  Velocity: <0.5255964875255623, 0.5255964875255623>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:5.0.    (hrs:mins:secs)
+0:                 Position: <14.796381032931551, 14.796381032931551>    with  Velocity: <0.5203405226503067, 0.5203405226503067>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:6.0.    (hrs:mins:secs)
+0:                 Position: <14.848415085196544, 14.848415085196544>    with  Velocity: <0.5151371174238036, 0.5151371174238036>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:7.0.    (hrs:mins:secs)
+0:                 Position: <14.899928796938868, 14.899928796938868>    with  Velocity: <0.5099857462495656, 0.5099857462495656>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:8.0.    (hrs:mins:secs)
+0:                 Position: <14.950927371563873, 14.950927371563873>    with  Velocity: <0.50488588878707, 0.50488588878707>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:9.0.    (hrs:mins:secs)
+0:                 Position: <15.001415960442623, 15.001415960442623>    with  Velocity: <0.49983702989919926, 0.49983702989919926>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:10.0.    (hrs:mins:secs)
+0:                 Position: <15.051399663432543, 15.051399663432543>    with  Velocity: <0.4948386596002073, 0.4948386596002073>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:11.0.    (hrs:mins:secs)
+0:                 Position: <15.100883529392563, 15.100883529392563>    with  Velocity: <0.48989027300420523, 0.48989027300420523>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:12.0.    (hrs:mins:secs)
+0:                 Position: <15.149872556692936, 15.149872556692936>    with  Velocity: <0.48499137027416317, 0.48499137027416317>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:13.0.    (hrs:mins:secs)
+0:                 Position: <15.197886702350152, 15.197886702350152>    with  Velocity: <0.48014145657142154, 0.48014145657142154>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:14.0.    (hrs:mins:secs)
+0:                 Position: <15.245900848007379, 15.245900848007379>    with  Velocity: <0.47534004200570734, 0.47534004200570734>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:15.0.    (hrs:mins:secs)
+0:                 Position: <15.293434852207879, 15.293434852207879>    with  Velocity: <0.4705866415856503, 0.4705866415856503>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:16.0.    (hrs:mins:secs)
+0:                 Position: <15.340493516366385, 15.340493516366385>    with  Velocity: <0.46588077516979376, 0.46588077516979376>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:17.0.    (hrs:mins:secs)
+0:                 Position: <15.387081593883414, 15.387081593883414>    with  Velocity: <0.46122196741809585, 0.46122196741809585>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:18.0.    (hrs:mins:secs)
+0:                 Position: <15.43320379062524, 15.43320379062524>    with  Velocity: <0.4566097477439149, 0.4566097477439149>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:19.0.    (hrs:mins:secs)
+0:                 Position: <15.478864765399605, 15.478864765399605>    with  Velocity: <0.45204365026647575, 0.45204365026647575>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:20.0.    (hrs:mins:secs)
+0:                 Position: <15.524069130426268, 15.524069130426268>    with  Velocity: <0.447523213763811, 0.447523213763811>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:21.0.    (hrs:mins:secs)
+0:                 Position: <15.568821451802597, 15.568821451802597>    with  Velocity: <0.44304798162617287, 0.44304798162617287>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:22.0.    (hrs:mins:secs)
+0:                 Position: <15.613126249965239, 15.613126249965239>    with  Velocity: <0.43861750180991116, 0.43861750180991116>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:23.0.    (hrs:mins:secs)
+0:                 Position: <15.65698800014629, 15.65698800014629>    with  Velocity: <0.43423132679181203, 0.43423132679181203>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:24.0.    (hrs:mins:secs)
+0:                 Position: <15.700411132825556, 15.700411132825556>    with  Velocity: <0.4298890135238939, 0.4298890135238939>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:25.0.    (hrs:mins:secs)
+0:                 Position: <15.743400034178014, 15.743400034178014>    with  Velocity: <0.425590123388655, 0.425590123388655>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:26.0.    (hrs:mins:secs)
+0:                 Position: <15.785959046516842, 15.785959046516842>    with  Velocity: <0.42133422215476846, 0.42133422215476846>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:27.0.    (hrs:mins:secs)
+0:                 Position: <15.828092468732349, 15.828092468732349>    with  Velocity: <0.4171208799332208, 0.4171208799332208>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:28.0.    (hrs:mins:secs)
+0:                 Position: <15.869804556725589, 15.869804556725589>    with  Velocity: <0.4129496711338886, 0.4129496711338886>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:29.0.    (hrs:mins:secs)
+0:                 Position: <15.911099523838947, 15.911099523838947>    with  Velocity: <0.4088201744225497, 0.4088201744225497>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:30.0.    (hrs:mins:secs)
+0:                 Position: <15.951981541281226, 15.951981541281226>    with  Velocity: <0.4047319726783242, 0.4047319726783242>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:31.0.    (hrs:mins:secs)
+0:                 Position: <15.992454738548991, 15.992454738548991>    with  Velocity: <0.400684652951541, 0.400684652951541>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:32.0.    (hrs:mins:secs)
+0:                 Position: <16.032523203844196, 16.032523203844196>    with  Velocity: <0.3966778064220256, 0.3966778064220256>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:33.0.    (hrs:mins:secs)
+0:                 Position: <16.0721909844863, 16.0721909844863>    with  Velocity: <0.39271102835780536, 0.39271102835780536>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:34.0.    (hrs:mins:secs)
+0:                 Position: <16.11146208732207, 16.11146208732207>    with  Velocity: <0.3887839180742273, 0.3887839180742273>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:35.0.    (hrs:mins:secs)
+0:                 Position: <16.150340479129344, 16.150340479129344>    with  Velocity: <0.38489607889348504, 0.38489607889348504>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:36.0.    (hrs:mins:secs)
+0:                 Position: <16.188830087018847, 16.188830087018847>    with  Velocity: <0.38104711810455016, 0.38104711810455016>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:37.0.    (hrs:mins:secs)
+0:                 Position: <16.22693479882925, 16.22693479882925>    with  Velocity: <0.37723664692350467, 0.37723664692350467>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:38.0.    (hrs:mins:secs)
+0:                 Position: <16.26465846352153, 16.26465846352153>    with  Velocity: <0.3734642804542696, 0.3734642804542696>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:39.0.    (hrs:mins:secs)
+0:                 Position: <16.302004891566913, 16.302004891566913>    with  Velocity: <0.3697296376497269, 0.3697296376497269>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:40.0.    (hrs:mins:secs)
+0:                 Position: <16.338977855331994, 16.338977855331994>    with  Velocity: <0.3660323412732296, 0.3660323412732296>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:41.0.    (hrs:mins:secs)
+0:                 Position: <16.375581089459235, 16.375581089459235>    with  Velocity: <0.3623720178604973, 0.3623720178604973>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:42.0.    (hrs:mins:secs)
+0:                 Position: <16.41181829124533, 16.41181829124533>    with  Velocity: <0.3587482976818923, 0.3587482976818923>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:43.0.    (hrs:mins:secs)
+0:                 Position: <16.44769312101352, 16.44769312101352>    with  Velocity: <0.3551608147050734, 0.3551608147050734>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:44.0.    (hrs:mins:secs)
+0:                 Position: <16.48320920248415, 16.48320920248415>    with  Velocity: <0.35160920655802264, 0.35160920655802264>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:45.0.    (hrs:mins:secs)
+0:                 Position: <16.518370123139892, 16.518370123139892>    with  Velocity: <0.3480931144924424, 0.3480931144924424>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:46.0.    (hrs:mins:secs)
+0:                 Position: <16.553179434589172, 16.553179434589172>    with  Velocity: <0.344612183347518, 0.344612183347518>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:47.0.    (hrs:mins:secs)
+0:                 Position: <16.58764065292394, 16.58764065292394>    with  Velocity: <0.3411660615140428, 0.3411660615140428>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:48.0.    (hrs:mins:secs)
+0:                 Position: <16.6217572590753, 16.6217572590753>    with  Velocity: <0.33775440089890235, 0.33775440089890235>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:49.0.    (hrs:mins:secs)
+0:                 Position: <16.65553269916521, 16.65553269916521>    with  Velocity: <0.3343768568899133, 0.3343768568899133>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:50.0.    (hrs:mins:secs)
+0:                 Position: <16.68897038485432, 16.68897038485432>    with  Velocity: <0.3310330883210142, 0.3310330883210142>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:51.0.    (hrs:mins:secs)
+0:                 Position: <16.722073693686557, 16.722073693686557>    with  Velocity: <0.32772275743780405, 0.32772275743780405>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:52.0.    (hrs:mins:secs)
+0:                 Position: <16.75484596943021, 16.75484596943021>    with  Velocity: <0.324445529863426, 0.324445529863426>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:53.0.    (hrs:mins:secs)
+0:                 Position: <16.787290522416487, 16.787290522416487>    with  Velocity: <0.32120107456479174, 0.32120107456479174>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:54.0.    (hrs:mins:secs)
+0:                 Position: <16.819410629873122, 16.819410629873122>    with  Velocity: <0.3179890638191438, 0.3179890638191438>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:55.0.    (hrs:mins:secs)
+0:                 Position: <16.85120953625513, 16.85120953625513>    with  Velocity: <0.31480917318095236, 0.31480917318095236>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:56.0.    (hrs:mins:secs)
+0:                 Position: <16.88269045357308, 16.88269045357308>    with  Velocity: <0.31166108144914284, 0.31166108144914284>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:57.0.    (hrs:mins:secs)
+0:                 Position: <16.913856561718166, 16.913856561718166>    with  Velocity: <0.3085444706346514, 0.3085444706346514>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:58.0.    (hrs:mins:secs)
+0:                 Position: <16.9447110087816, 16.9447110087816>    with  Velocity: <0.3054590259283049, 0.3054590259283049>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:1.0:59.0.    (hrs:mins:secs)
+0:                 Position: <16.97525691137435, 16.97525691137435>    with  Velocity: <0.3024044356690218, 0.3024044356690218>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:0.0.    (hrs:mins:secs)
+0:                 Position: <17.005497354941202, 17.005497354941202>    with  Velocity: <0.2993803913123316, 0.2993803913123316>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:1.0.    (hrs:mins:secs)
+0:                 Position: <17.03543539407234, 17.03543539407234>    with  Velocity: <0.29638658739920826, 0.29638658739920826>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:2.0.    (hrs:mins:secs)
+0:                 Position: <17.065074052812424, 17.065074052812424>    with  Velocity: <0.2934227215252162, 0.2934227215252162>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:3.0.    (hrs:mins:secs)
+0:                 Position: <17.094416324965056, 17.094416324965056>    with  Velocity: <0.29048849430996404, 0.29048849430996404>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:4.0.    (hrs:mins:secs)
+0:                 Position: <17.12346517439619, 17.12346517439619>    with  Velocity: <0.2875836093668644, 0.2875836093668644>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:5.0.    (hrs:mins:secs)
+0:                 Position: <17.15222353533291, 17.15222353533291>    with  Velocity: <0.28470777327319574, 0.28470777327319574>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:6.0.    (hrs:mins:secs)
+0:                 Position: <17.180694312660084, 17.180694312660084>    with  Velocity: <0.2818606955404638, 0.2818606955404638>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:7.0.    (hrs:mins:secs)
+0:                 Position: <17.208880382214165, 17.208880382214165>    with  Velocity: <0.27904208858505913, 0.27904208858505913>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:8.0.    (hrs:mins:secs)
+0:                 Position: <17.23678459107275, 17.23678459107275>    with  Velocity: <0.27625166769920856, 0.27625166769920856>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:9.0.    (hrs:mins:secs)
+0:                 Position: <17.264409757842703, 17.264409757842703>    with  Velocity: <0.2734891510222165, 0.2734891510222165>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:10.0.    (hrs:mins:secs)
+0:                 Position: <17.29175867294507, 17.29175867294507>    with  Velocity: <0.27075425951199433, 0.27075425951199433>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:11.0.    (hrs:mins:secs)
+0:                 Position: <17.318834098896108, 17.318834098896108>    with  Velocity: <0.2680467169168744, 0.2680467169168744>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:12.0.    (hrs:mins:secs)
+0:                 Position: <17.345638770587957, 17.345638770587957>    with  Velocity: <0.2653662497477056, 0.2653662497477056>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:13.0.    (hrs:mins:secs)
+0:                 Position: <17.372175395562895, 17.372175395562895>    with  Velocity: <0.26271258725022856, 0.26271258725022856>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:14.0.    (hrs:mins:secs)
+0:                 Position: <17.39844665428797, 17.39844665428797>    with  Velocity: <0.26008546137772626, 0.26008546137772626>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:15.0.    (hrs:mins:secs)
+0:                 Position: <17.424455200425715, 17.424455200425715>    with  Velocity: <0.257484606763949, 0.257484606763949>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:16.0.    (hrs:mins:secs)
+0:                 Position: <17.450203661102027, 17.450203661102027>    with  Velocity: <0.25490976069630955, 0.25490976069630955>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:17.0.    (hrs:mins:secs)
+0:                 Position: <17.475694637171546, 17.475694637171546>    with  Velocity: <0.25236066308934646, 0.25236066308934646>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:18.0.    (hrs:mins:secs)
+0:                 Position: <17.500930703480567, 17.500930703480567>    with  Velocity: <0.249837056458453, 0.249837056458453>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:19.0.    (hrs:mins:secs)
+0:                 Position: <17.525914409126376, 17.525914409126376>    with  Velocity: <0.24733868589386848, 0.24733868589386848>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:20.0.    (hrs:mins:secs)
+0:                 Position: <17.550648277715897, 17.550648277715897>    with  Velocity: <0.2448652990349298, 0.2448652990349298>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:21.0.    (hrs:mins:secs)
+0:                 Position: <17.575134807619353, 17.575134807619353>    with  Velocity: <0.2424166460445805, 0.2424166460445805>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:22.0.    (hrs:mins:secs)
+0:                 Position: <17.599376472223927, 17.599376472223927>    with  Velocity: <0.2399924795841347, 0.2399924795841347>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:23.0.    (hrs:mins:secs)
+0:                 Position: <17.623375720182455, 17.623375720182455>    with  Velocity: <0.23759255478829336, 0.23759255478829336>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:24.0.    (hrs:mins:secs)
+0:                 Position: <17.647134975661405, 17.647134975661405>    with  Velocity: <0.23521662924041042, 0.23521662924041042>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:25.0.    (hrs:mins:secs)
+0:                 Position: <17.670656638585303, 17.670656638585303>    with  Velocity: <0.2328644629480063, 0.2328644629480063>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:26.0.    (hrs:mins:secs)
+0:                 Position: <17.693943084880093, 17.693943084880093>    with  Velocity: <0.23053581831852624, 0.23053581831852624>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:27.0.    (hrs:mins:secs)
+0:                 Position: <17.716996666711882, 17.716996666711882>    with  Velocity: <0.22823046013534098, 0.22823046013534098>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:28.0.    (hrs:mins:secs)
+0:                 Position: <17.739819712725325, 17.739819712725325>    with  Velocity: <0.2259481555339876, 0.2259481555339876>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:29.0.    (hrs:mins:secs)
+0:                 Position: <17.762414528278814, 17.762414528278814>    with  Velocity: <0.22368867397864772, 0.22368867397864772>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:30.0.    (hrs:mins:secs)
+0:                 Position: <17.78478339567683, 17.78478339567683>    with  Velocity: <0.22145178723886125, 0.22145178723886125>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:31.0.    (hrs:mins:secs)
+0:                 Position: <17.80692857440086, 17.80692857440086>    with  Velocity: <0.21923726936647264, 0.21923726936647264>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:32.0.    (hrs:mins:secs)
+0:                 Position: <17.828852301337495, 17.828852301337495>    with  Velocity: <0.2170448966728079, 0.2170448966728079>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:33.0.    (hrs:mins:secs)
+0:                 Position: <17.850556791004724, 17.850556791004724>    with  Velocity: <0.21487444770607983, 0.21487444770607983>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:34.0.    (hrs:mins:secs)
+0:                 Position: <17.87204423577541, 17.87204423577541>    with  Velocity: <0.21272570322901904, 0.21272570322901904>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:35.0.    (hrs:mins:secs)
+0:                 Position: <17.89331680609826, 17.89331680609826>    with  Velocity: <0.21059844619672885, 0.21059844619672885>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:36.0.    (hrs:mins:secs)
+0:                 Position: <17.9143766507181, 17.9143766507181>    with  Velocity: <0.20849246173476157, 0.20849246173476157>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:37.0.    (hrs:mins:secs)
+0:                 Position: <17.935225896891527, 17.935225896891527>    with  Velocity: <0.20640753711741397, 0.20640753711741397>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:38.0.    (hrs:mins:secs)
+0:                 Position: <17.95586665060326, 17.95586665060326>    with  Velocity: <0.20434346174623982, 0.20434346174623982>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:39.0.    (hrs:mins:secs)
+0:                 Position: <17.976300996777884, 17.976300996777884>    with  Velocity: <0.20230002712877743, 0.20230002712877743>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:40.0.    (hrs:mins:secs)
+0:                 Position: <17.99673329951802, 17.99673329951802>    with  Velocity: <0.20027702685748966, 0.20027702685748966>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:41.0.    (hrs:mins:secs)
+0:                 Position: <18.01676100220363, 18.01676100220363>    with  Velocity: <0.19827425658891476, 0.19827425658891476>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:42.0.    (hrs:mins:secs)
+0:                 Position: <18.036588427862632, 18.036588427862632>    with  Velocity: <0.1962915140230256, 0.1962915140230256>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:43.0.    (hrs:mins:secs)
+0:                 Position: <18.05621757926489, 18.05621757926489>    with  Velocity: <0.19432859888279536, 0.19432859888279536>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:44.0.    (hrs:mins:secs)
+0:                 Position: <18.075650439153257, 18.075650439153257>    with  Velocity: <0.1923853128939674, 0.1923853128939674>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:45.0.    (hrs:mins:secs)
+0:                 Position: <18.094888970442547, 18.094888970442547>    with  Velocity: <0.19046145976502774, 0.19046145976502774>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:46.0.    (hrs:mins:secs)
+0:                 Position: <18.113935116419178, 18.113935116419178>    with  Velocity: <0.18855684516737745, 0.18855684516737745>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:47.0.    (hrs:mins:secs)
+0:                 Position: <18.132790800935872, 18.132790800935872>    with  Velocity: <0.18667127671570366, 0.18667127671570366>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:48.0.    (hrs:mins:secs)
+0:                 Position: <18.151457928607407, 18.151457928607407>    with  Velocity: <0.18480456394854664, 0.18480456394854664>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:49.0.    (hrs:mins:secs)
+0:                 Position: <18.169938385002105, 18.169938385002105>    with  Velocity: <0.18295651830906118, 0.18295651830906118>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:50.0.    (hrs:mins:secs)
+0:                 Position: <18.188234036832974, 18.188234036832974>    with  Velocity: <0.18112695312597057, 0.18112695312597057>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:51.0.    (hrs:mins:secs)
+0:                 Position: <18.20634673214564, 18.20634673214564>    with  Velocity: <0.17931568359471087, 0.17931568359471087>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:52.0.    (hrs:mins:secs)
+0:                 Position: <18.224278300505226, 18.224278300505226>    with  Velocity: <0.17752252675876376, 0.17752252675876376>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:53.0.    (hrs:mins:secs)
+0:                 Position: <18.24203055318109, 18.24203055318109>    with  Velocity: <0.17574730149117612, 0.17574730149117612>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:54.0.    (hrs:mins:secs)
+0:                 Position: <18.25960528333014, 18.25960528333014>    with  Velocity: <0.17398982847626437, 0.17398982847626437>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:55.0.    (hrs:mins:secs)
+0:                 Position: <18.277004266177677, 18.277004266177677>    with  Velocity: <0.17224993019150173, 0.17224993019150173>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:56.0.    (hrs:mins:secs)
+0:                 Position: <18.294229259196804, 18.294229259196804>    with  Velocity: <0.17052743088958672, 0.17052743088958672>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:57.0.    (hrs:mins:secs)
+0:                 Position: <18.3112820022857, 18.3112820022857>    with  Velocity: <0.16882215658069086, 0.16882215658069086>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:58.0.    (hrs:mins:secs)
+0:                 Position: <18.328164217943844, 18.328164217943844>    with  Velocity: <0.16713393501488394, 0.16713393501488394>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:2.0:59.0.    (hrs:mins:secs)
+0:                 Position: <18.344877611445376, 18.344877611445376>    with  Velocity: <0.1654625956647351, 0.1654625956647351>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:0.0.    (hrs:mins:secs)
+0:                 Position: <18.361423871011773, 18.361423871011773>    with  Velocity: <0.16380796970808775, 0.16380796970808775>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:1.0.    (hrs:mins:secs)
+0:                 Position: <18.377804667982723, 18.377804667982723>    with  Velocity: <0.16216989001100687, 0.16216989001100687>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:2.0.    (hrs:mins:secs)
+0:                 Position: <18.394021656983817, 18.394021656983817>    with  Velocity: <0.1605481911108968, 0.1605481911108968>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:3.0.    (hrs:mins:secs)
+0:                 Position: <18.41007647609495, 18.41007647609495>    with  Velocity: <0.15894270919978784, 0.15894270919978784>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:4.0.    (hrs:mins:secs)
+0:                 Position: <18.42597074701481, 18.42597074701481>    with  Velocity: <0.15735328210778995, 0.15735328210778995>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:5.0.    (hrs:mins:secs)
+0:                 Position: <18.441706075225717, 18.441706075225717>    with  Velocity: <0.15577974928671207, 0.15577974928671207>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:6.0.    (hrs:mins:secs)
+0:                 Position: <18.45728405015422, 18.45728405015422>    with  Velocity: <0.15422195179384496, 0.15422195179384496>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:7.0.    (hrs:mins:secs)
+0:                 Position: <18.47270624533345, 18.47270624533345>    with  Velocity: <0.1526797322759065, 0.1526797322759065>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:8.0.    (hrs:mins:secs)
+0:                 Position: <18.4879742185612, 18.4879742185612>    with  Velocity: <0.15115293495314744, 0.15115293495314744>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:9.0.    (hrs:mins:secs)
+0:                 Position: <18.503089512056626, 18.503089512056626>    with  Velocity: <0.14964140560361597, 0.14964140560361597>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:10.0.    (hrs:mins:secs)
+0:                 Position: <18.518053652616906, 18.518053652616906>    with  Velocity: <0.14814499154757982, 0.14814499154757982>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:11.0.    (hrs:mins:secs)
+0:                 Position: <18.532868151771787, 18.532868151771787>    with  Velocity: <0.14666354163210402, 0.14666354163210402>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:12.0.    (hrs:mins:secs)
+0:                 Position: <18.547534505934927, 18.547534505934927>    with  Velocity: <0.145196906215783, 0.145196906215783>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:13.0.    (hrs:mins:secs)
+0:                 Position: <18.562054196556666, 18.562054196556666>    with  Velocity: <0.14374493715362516, 0.14374493715362516>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:14.0.    (hrs:mins:secs)
+0:                 Position: <18.576428690272174, 18.576428690272174>    with  Velocity: <0.1423074877820889, 0.1423074877820889>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:15.0.    (hrs:mins:secs)
+0:                 Position: <18.590659439050306, 18.590659439050306>    with  Velocity: <0.140884412904268, 0.140884412904268>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:16.0.    (hrs:mins:secs)
+0:                 Position: <18.60474788034069, 18.60474788034069>    with  Velocity: <0.13947556877522532, 0.13947556877522532>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:17.0.    (hrs:mins:secs)
+0:                 Position: <18.618695437218314, 18.618695437218314>    with  Velocity: <0.13808081308747308, 0.13808081308747308>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:18.0.    (hrs:mins:secs)
+0:                 Position: <18.632503518527066, 18.632503518527066>    with  Velocity: <0.13670000495659834, 0.13670000495659834>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:19.0.    (hrs:mins:secs)
+0:                 Position: <18.646173519022902, 18.646173519022902>    with  Velocity: <0.13533300490703237, 0.13533300490703237>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:20.0.    (hrs:mins:secs)
+0:                 Position: <18.659706819513467, 18.659706819513467>    with  Velocity: <0.13397967485796206, 0.13397967485796206>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:21.0.    (hrs:mins:secs)
+0:                 Position: <18.67310478699914, 18.67310478699914>    with  Velocity: <0.13263987810938244, 0.13263987810938244>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:22.0.    (hrs:mins:secs)
+0:                 Position: <18.68636877481017, 18.68636877481017>    with  Velocity: <0.1313134793282886, 0.1313134793282886>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:23.0.    (hrs:mins:secs)
+0:                 Position: <18.699500122743096, 18.699500122743096>    with  Velocity: <0.13000034453500572, 0.13000034453500572>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:24.0.    (hrs:mins:secs)
+0:                 Position: <18.712500157196466, 18.712500157196466>    with  Velocity: <0.12870034108965567, 0.12870034108965567>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:25.0.    (hrs:mins:secs)
+0:                 Position: <18.72537019130548, 18.72537019130548>    with  Velocity: <0.12741333767875912, 0.12741333767875912>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:26.0.    (hrs:mins:secs)
+0:                 Position: <18.738111525073442, 18.738111525073442>    with  Velocity: <0.12613920430197154, 0.12613920430197154>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:27.0.    (hrs:mins:secs)
+0:                 Position: <18.75072544550357, 18.75072544550357>    with  Velocity: <0.12487781225895182, 0.12487781225895182>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:28.0.    (hrs:mins:secs)
+0:                 Position: <18.76321322672937, 18.76321322672937>    with  Velocity: <0.12362903413636231, 0.12362903413636231>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:29.0.    (hrs:mins:secs)
+0:                 Position: <18.775576130142902, 18.775576130142902>    with  Velocity: <0.12239274379499869, 0.12239274379499869>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:30.0.    (hrs:mins:secs)
+0:                 Position: <18.787815404522313, 18.787815404522313>    with  Velocity: <0.12116881635704871, 0.12116881635704871>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:31.0.    (hrs:mins:secs)
+0:                 Position: <18.79993228615796, 18.79993228615796>    with  Velocity: <0.11995712819347822, 0.11995712819347822>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:32.0.    (hrs:mins:secs)
+0:                 Position: <18.811927998977474, 18.811927998977474>    with  Velocity: <0.11875755691154344, 0.11875755691154344>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:33.0.    (hrs:mins:secs)
+0:                 Position: <18.823803754668667, 18.823803754668667>    with  Velocity: <0.117569981342428, 0.117569981342428>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:34.0.    (hrs:mins:secs)
+0:                 Position: <18.835560752802827, 18.835560752802827>    with  Velocity: <0.11639428152900373, 0.11639428152900373>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:35.0.    (hrs:mins:secs)
+0:                 Position: <18.84720018095586, 18.84720018095586>    with  Velocity: <0.1152303387137137, 0.1152303387137137>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:36.0.    (hrs:mins:secs)
+0:                 Position: <18.8587232148273, 18.8587232148273>    with  Velocity: <0.11407803532657657, 0.11407803532657657>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:37.0.    (hrs:mins:secs)
+0:                 Position: <18.87013101836005, 18.87013101836005>    with  Velocity: <0.1129372549733108, 0.1129372549733108>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:38.0.    (hrs:mins:secs)
+0:                 Position: <18.881424743857245, 18.881424743857245>    with  Velocity: <0.11180788242357768, 0.11180788242357768>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:39.0.    (hrs:mins:secs)
+0:                 Position: <18.892605532099516, 18.892605532099516>    with  Velocity: <0.11068980359934191, 0.11068980359934191>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:40.0.    (hrs:mins:secs)
+0:                 Position: <18.903674512459368, 18.903674512459368>    with  Velocity: <0.10958290556334849, 0.10958290556334849>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:41.0.    (hrs:mins:secs)
+0:                 Position: <18.914632803015586, 18.914632803015586>    with  Velocity: <0.108487076507715, 0.108487076507715>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:42.0.    (hrs:mins:secs)
+0:                 Position: <18.92548151066621, 18.92548151066621>    with  Velocity: <0.10740220574263784, 0.10740220574263784>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:43.0.    (hrs:mins:secs)
+0:                 Position: <18.936221731240444, 18.936221731240444>    with  Velocity: <0.10632818368521146, 0.10632818368521146>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:44.0.    (hrs:mins:secs)
+0:                 Position: <18.946854549608794, 18.946854549608794>    with  Velocity: <0.10526490184835935, 0.10526490184835935>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:45.0.    (hrs:mins:secs)
+0:                 Position: <18.957381039793553, 18.957381039793553>    with  Velocity: <0.10421225282987576, 0.10421225282987576>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:46.0.    (hrs:mins:secs)
+0:                 Position: <18.96780226507645, 18.96780226507645>    with  Velocity: <0.103170130301577, 0.103170130301577>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:47.0.    (hrs:mins:secs)
+0:                 Position: <18.978119278106654, 18.978119278106654>    with  Velocity: <0.10213842899856122, 0.10213842899856122>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:48.0.    (hrs:mins:secs)
+0:                 Position: <18.98833312100664, 18.98833312100664>    with  Velocity: <0.1011170447085756, 0.1011170447085756>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:49.0.    (hrs:mins:secs)
+0:                 Position: <18.998444825477357, 18.998444825477357>    with  Velocity: <0.10010587426148984, 0.10010587426148984>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:3.0:50.0.    (hrs:mins:secs)
+0:                 Position: <19.00845541290338, 19.00845541290338>    with  Velocity: <0.09910481551887494, 0.09910481551887494>.
+
+Simulation End:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Elapsed Time:               0.0:3.0:50.0.    (hrs:mins:secs)
+.
+.
+======================================
+... Testing SoccerSim valid ball should go out of bounds...
+======================================
+Simulation Beginning:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Initial Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:0.0.    (hrs:mins:secs)
+0:                   Position: <10.0, 10.0>    with  Velocity: <1000.0, 1000.0>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:1.0.    (hrs:mins:secs)
+0:                 Position: <109.0, 109.0>    with  Velocity: <990.0, 990.0>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:2.0.    (hrs:mins:secs)
+0:                 Position: <208.00000000000063, 208.00000000000063>    with  Velocity: <980.1, 980.1>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:3.0.    (hrs:mins:secs)
+0:                 Position: <306.9900999999999, 306.9900999999999>    with  Velocity: <970.299, 970.299>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:4.0.    (hrs:mins:secs)
+0:                 Position: <404.02000000000106, 404.02000000000106>    with  Velocity: <960.59601, 960.59601>.
+
+Simulation End:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Elapsed Time:               0.0:0.0:4.0.    (hrs:mins:secs)
+.
+.
+======================================
+... Testing SoccerSim valid ball set six balls subsecond time slice...
+======================================
+Simulation Beginning:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Initial Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:0.0.    (hrs:mins:secs)
+0:                   Position: <200.0, 200.0>    with  Velocity: <10.0, 10.0>.
+
+1:                   Position: <100.0, 100.0>    with  Velocity: <-100.0, -100.0>.
+
+2:                   Position: <150.0, 150.0>    with  Velocity: <200.0, 200.0>.
+
+3:                   Position: <175.0, 175.0>    with  Velocity: <-110.0, -110.0>.
+
+4:                   Position: <20.0, 20.0>    with  Velocity: <1.0, 1.0>.
+
+5:                   Position: <50.0, 50.0>    with  Velocity: <-5.0, -5.0>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:0.1.    (hrs:mins:secs)
+0:                 Position: <200.0999999999999, 200.0999999999999>    with  Velocity: <10.0, 10.0>.
+
+1:                 Position: <99.00000000000006, 99.00000000000006>    with  Velocity: <-100.0, -100.0>.
+
+2:                 Position: <151.9999999999999, 151.9999999999999>    with  Velocity: <200.0, 200.0>.
+
+3:                 Position: <173.89999999999986, 173.89999999999986>    with  Velocity: <-110.0, -110.0>.
+
+4:                 Position: <20.010000000000012, 20.010000000000012>    with  Velocity: <1.0, 1.0>.
+
+5:                 Position: <49.949999999999974, 49.949999999999974>    with  Velocity: <-5.0, -5.0>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:0.2.    (hrs:mins:secs)
+0:                 Position: <200.18999999999983, 200.18999999999983>    with  Velocity: <10.0, 10.0>.
+
+1:                 Position: <98.10000000000011, 98.10000000000011>    with  Velocity: <-100.0, -100.0>.
+
+2:                 Position: <153.79999999999978, 153.79999999999978>    with  Velocity: <200.0, 200.0>.
+
+3:                 Position: <172.90999999999974, 172.90999999999974>    with  Velocity: <-110.0, -110.0>.
+
+4:                 Position: <20.019000000000023, 20.019000000000023>    with  Velocity: <1.0, 1.0>.
+
+5:                 Position: <49.90499999999995, 49.90499999999995>    with  Velocity: <-5.0, -5.0>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:0.30000000000000004.    (hrs:mins:secs)
+0:                 Position: <200.28999999999974, 200.28999999999974>    with  Velocity: <10.0, 10.0>.
+
+1:                 Position: <97.10000000000016, 97.10000000000016>    with  Velocity: <-100.0, -100.0>.
+
+2:                 Position: <155.79999999999967, 155.79999999999967>    with  Velocity: <200.0, 200.0>.
+
+3:                 Position: <171.8099999999996, 171.8099999999996>    with  Velocity: <-110.0, -110.0>.
+
+4:                 Position: <20.029000000000035, 20.029000000000035>    with  Velocity: <1.0, 1.0>.
+
+5:                 Position: <49.854999999999926, 49.854999999999926>    with  Velocity: <-5.0, -5.0>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:0.4.    (hrs:mins:secs)
+0:                 Position: <200.38999999999965, 200.38999999999965>    with  Velocity: <10.0, 10.0>.
+
+1:                 Position: <96.10000000000022, 96.10000000000022>    with  Velocity: <-100.0, -100.0>.
+
+2:                 Position: <157.79999999999956, 157.79999999999956>    with  Velocity: <200.0, 200.0>.
+
+3:                 Position: <170.70999999999947, 170.70999999999947>    with  Velocity: <-110.0, -110.0>.
+
+4:                 Position: <20.039000000000048, 20.039000000000048>    with  Velocity: <1.0, 1.0>.
+
+5:                 Position: <49.8049999999999, 49.8049999999999>    with  Velocity: <-5.0, -5.0>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:0.5.    (hrs:mins:secs)
+0:                 Position: <200.48999999999955, 200.48999999999955>    with  Velocity: <10.0, 10.0>.
+
+1:                 Position: <95.10000000000028, 95.10000000000028>    with  Velocity: <-100.0, -100.0>.
+
+2:                 Position: <159.79999999999944, 159.79999999999944>    with  Velocity: <200.0, 200.0>.
+
+3:                 Position: <169.60999999999933, 169.60999999999933>    with  Velocity: <-110.0, -110.0>.
+
+4:                 Position: <20.04900000000006, 20.04900000000006>    with  Velocity: <1.0, 1.0>.
+
+5:                 Position: <49.754999999999875, 49.754999999999875>    with  Velocity: <-5.0, -5.0>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:0.6.    (hrs:mins:secs)
+0:                 Position: <200.58999999999946, 200.58999999999946>    with  Velocity: <10.0, 10.0>.
+
+1:                 Position: <94.10000000000034, 94.10000000000034>    with  Velocity: <-100.0, -100.0>.
+
+2:                 Position: <161.79999999999933, 161.79999999999933>    with  Velocity: <200.0, 200.0>.
+
+3:                 Position: <168.5099999999992, 168.5099999999992>    with  Velocity: <-110.0, -110.0>.
+
+4:                 Position: <20.059000000000072, 20.059000000000072>    with  Velocity: <1.0, 1.0>.
+
+5:                 Position: <49.70499999999985, 49.70499999999985>    with  Velocity: <-5.0, -5.0>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:0.7.    (hrs:mins:secs)
+0:                 Position: <200.68999999999937, 200.68999999999937>    with  Velocity: <10.0, 10.0>.
+
+1:                 Position: <93.10000000000039, 93.10000000000039>    with  Velocity: <-100.0, -100.0>.
+
+2:                 Position: <163.79999999999922, 163.79999999999922>    with  Velocity: <200.0, 200.0>.
+
+3:                 Position: <167.40999999999906, 167.40999999999906>    with  Velocity: <-110.0, -110.0>.
+
+4:                 Position: <20.069000000000084, 20.069000000000084>    with  Velocity: <1.0, 1.0>.
+
+5:                 Position: <49.65499999999982, 49.65499999999982>    with  Velocity: <-5.0, -5.0>.
+
+Simulation End:                    COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Time:                 0.0:0.0:0.7999999999999999.    (hrs:mins:secs)
+CONTACT:     Between Ball 2 & Ball 3 at: Position:   <165.7999999999991, 165.7999999999991>.
+.
+.
+======================================
+... Testing SoccerSim valid ball set five balls 1.234 second time slice...
+======================================
+Simulation Beginning:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Initial Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:0.0.    (hrs:mins:secs)
+0:                   Position: <200.0, 200.0>    with  Velocity: <10.0, 10.0>.
+
+1:                   Position: <100.0, 100.0>    with  Velocity: <-100.0, -100.0>.
+
+2:                   Position: <175.0, 175.0>    with  Velocity: <-110.0, -110.0>.
+
+3:                   Position: <20.0, 20.0>    with  Velocity: <1.0, 1.0>.
+
+4:                   Position: <50.0, 50.0>    with  Velocity: <-5.0, -5.0>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:1.234.    (hrs:mins:secs)
+0:                 Position: <201.2275999999988, 201.2275999999988>    with  Velocity: <9.9, 9.9>.
+
+1:                 Position: <87.72400000000047, 87.72400000000047>    with  Velocity: <-99.0, -99.0>.
+
+2:                 Position: <161.49639999999852, 161.49639999999852>    with  Velocity: <-108.9, -108.9>.
+
+3:                 Position: <20.12276000000016, 20.12276000000016>    with  Velocity: <0.99, 0.99>.
+
+4:                 Position: <49.386199999999725, 49.386199999999725>    with  Velocity: <-4.95, -4.95>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:2.468.    (hrs:mins:secs)
+0:                 Position: <202.44064699999834, 202.44064699999834>    with  Velocity: <9.801, 9.801>.
+
+1:                 Position: <75.59353000000009, 75.59353000000009>    with  Velocity: <-98.01, -98.01>.
+
+2:                 Position: <148.15288299999818, 148.15288299999818>    with  Velocity: <-107.811, -107.811>.
+
+3:                 Position: <20.244064700000262, 20.244064700000262>    with  Velocity: <0.9801, 0.9801>.
+
+4:                 Position: <48.77967649999975, 48.77967649999975>    with  Velocity: <-4.9005, -4.9005>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:3.702.    (hrs:mins:secs)
+0:                 Position: <203.64911029999845, 203.64911029999845>    with  Velocity: <9.70299, 9.70299>.
+
+1:                 Position: <63.508897000000246, 63.508897000000246>    with  Velocity: <-97.02990000000001, -97.02990000000001>.
+
+2:                 Position: <134.85978669999903, 134.85978669999903>    with  Velocity: <-106.73289000000001, -106.73289000000001>.
+
+3:                 Position: <20.364911030000147, 20.364911030000147>    with  Velocity: <0.970299, 0.970299>.
+
+4:                 Position: <48.175444850000076, 48.175444850000076>    with  Velocity: <-4.851495, -4.851495>.
+
+Simulation Update:                   NO COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:4.936.    (hrs:mins:secs)
+0:                 Position: <204.8335542892986, 204.8335542892986>    with  Velocity: <9.605960099999999, 9.605960099999999>.
+
+1:                 Position: <51.66445710700014, 51.66445710700014>    with  Velocity: <-96.05960100000001, -96.05960100000001>.
+
+2:                 Position: <121.83090281769917, 121.83090281769917>    with  Velocity: <-105.6655611, -105.6655611>.
+
+3:                 Position: <20.483355428930075, 20.483355428930075>    with  Velocity: <0.9605960100000001, 0.9605960100000001>.
+
+4:                 Position: <47.58322285535, 47.58322285535>    with  Velocity: <-4.8029800499999995, -4.8029800499999995>.
+
+Simulation End:                    COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Time:                 0.0:0.0:6.17.    (hrs:mins:secs)
+CONTACT:     Between Ball 1 & Ball 4 at: Position:   <48.13906975030022, 48.13906975030022>.
+.
+.
+======================================
+... Testing SoccerSim valid ball set ten balls 10 second time slice...
+======================================
+Simulation Beginning:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Initial Conditions:
+~~~~~~~~~~~~~~
+Current Time:               0.0:0.0:0.0.    (hrs:mins:secs)
+0:                   Position: <150.0, 150.0>    with  Velocity: <10.0, 10.0>.
+
+1:                   Position: <100.0, 100.0>    with  Velocity: <-100.0, -100.0>.
+
+2:                   Position: <200.0, 200.0>    with  Velocity: <200.0, 200.0>.
+
+3:                   Position: <250.0, 250.0>    with  Velocity: <-110.0, -110.0>.
+
+4:                   Position: <20.0, 20.0>    with  Velocity: <1.0, 1.0>.
+
+5:                   Position: <50.0, 50.0>    with  Velocity: <-5.0, -5.0>.
+
+6:                   Position: <-100.0, -100.0>    with  Velocity: <200.0, 200.0>.
+
+7:                   Position: <-200.0, -200.0>    with  Velocity: <300.0, 300.0>.
+
+8:                   Position: <-110.0, -110.0>    with  Velocity: <20.0, 20.0>.
+
+9:                   Position: <1.0, 1.0>    with  Velocity: <50.0, 50.0>.
+
+Simulation End:                    COLLISION OCCURRED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Current Time:                 0.0:0.0:10.0.    (hrs:mins:secs)
+CONTACT:     Between Ball 2 & Ball 3 at: Position:   <231.87799999999933, 231.87799999999933>.
+.
+.
+======================================
+... End of SoccerSim Testing...
+======================================
