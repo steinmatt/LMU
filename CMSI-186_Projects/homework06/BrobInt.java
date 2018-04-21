@@ -66,7 +66,7 @@ public class BrobInt {
    public static final BrobInt MIN_LONG = new BrobInt( new String (new Long( Long.MIN_VALUE ).toString()) );
 
   /// These are the internal fields
-   private String internalValue = "";        // internal String representation of this BrobInt
+   public String internalValue = "";        // internal String representation of this BrobInt
    public int     sign          = 0;         // "0" is positive, "1" is negative
    private String reversed      = "";        // the backwards version of the internal String representation
    public int[] intArray = null;
@@ -109,20 +109,18 @@ public class BrobInt {
         }
       }
 
-
-     internalValue += value.toString();
-
-
-
-
+      internalValue += value.toString();
 
       int i = 0;
       int length = internalValue.length();
       int start = length - CHARS_THAT_FIT;
       int size = (int) (Math.ceil(length/CHARS_THAT_FIT) + 1);
       intArray = new int[size];
+      if (length <= 0) {
+        length = 0;
+      }
 
-      StringBuffer sb = new StringBuffer(internalValue).reverse();
+      StringBuffer sb = new StringBuffer(internalValue);
 
       while (length >= 8) {
         intArray[i] = Integer.parseInt(sb.substring(start,length));
@@ -133,8 +131,10 @@ public class BrobInt {
 
       if (length > 0) {
         intArray[i] = Integer.parseInt(sb.substring(0,length));
+        i++;
       }
-      while (i < size-1){
+
+      while (i < size){
         intArray[i] = 0;
         i++;
       }
@@ -190,14 +190,13 @@ public class BrobInt {
 
      int n1Size = intArray.length-1;
      int n2Size = gint.intArray.length-1;
-     int indexSum = n1Size > n2Size ? (n1Size + 2) : (n2Size + 2);
+     int indexSum = (n1Size > n2Size ? (n1Size + 2) : (n2Size + 2) );
      int slack = 0;
      int[] sum = new int[indexSum];
      int s;
      int i = 0;
      int j = 0;
      int k = 0;
-
 
      if (sign == gint.sign) {
       while (true) {
@@ -208,8 +207,8 @@ public class BrobInt {
         i++;
         j++;
         if (Integer.toString(s).length() > CHARS_THAT_FIT) {
-          StringBuffer sb = new StringBuffer( Integer.toString(s) );
           slack = 1;
+          StringBuffer sb = new StringBuffer(Integer.toString(s));
           sb.deleteCharAt(0);
           sum[k++] = Integer.parseInt( sb.toString() );
         }
@@ -227,35 +226,44 @@ public class BrobInt {
 
 
       String strSum = "";
-      for (int m = 0; m < sum.length; m++){
+      for (int m = sum.length-1; m >= 0; m--){
         strSum += Integer.toString(sum[m]);
       }
-      //for (i = sum.length -1; i >= 0 ;i--){
 
-      //}
+      if (sign == 1) {
+        strSum = "-" + strSum;
+      }
+
       BrobInt result = new BrobInt( strSum );
-      result.sign = sign;
       return result;
     }
     else if (0 == compareTo(gint)) {
       return BrobInt.ZERO;
     }
     else if (1 == compareTo(gint) ){
+      System.out.println ("got here");
       BrobInt bigInt = this;
       bigInt.sign = 0;
       BrobInt smallInt = gint;
       smallInt.sign = 0;
       BrobInt result = bigInt.subtractInt(smallInt);
       result.sign = sign;
+      if (result.sign == 1) {
+        result.internalValue = "-" + result.internalValue;
+      }
       return result;
     }
     else {
+      System.out.println("nope i'm here.");
       BrobInt bigInt = gint;
       bigInt.sign = 0;
       BrobInt smallInt = this;
       smallInt.sign = 0;
       BrobInt result = smallInt.subtractInt(bigInt);
       result.sign = gint.sign;
+      if (result.sign == 1) {
+        result.internalValue = "-" + result.internalValue;
+      }
       return result;
     }
   }
@@ -267,23 +275,21 @@ public class BrobInt {
    *  @return BrobInt that is the difference of the value of this BrobInt and the one passed in
    *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
    public BrobInt subtractInt( BrobInt gint ) {
-      // Set up for substraction sign handling to decide what to do based on the following cases:
-      //    1) no sign at all, this item lrger than arg :                       simple subtract a -b
-      //    2) both signs (+), this item lrger than arg:                        simple subtract a-b
-      //    3) one (+) one no sign, this item lrger than arg:                   simple subtract a-b
-      //    4) no signs at all, this item smaller than arg:                     swap a&b, subtract a-b, result negative
-      //    5) both signs positive, this item smaller than arg:                 swap a&b, subtract a-b, result negative
-      //    6) one positive one no sign, this item smaller than arg:            swap a&b, subtract a-b, result negative
-      //    7) this no sign or positive, arg negative:                          remove neg
+
       if (1 == gint.sign) {
-        gint.sign = 0;
-        return addInt(gint);
+        System.out.println("now im here!");
+        BrobInt b = gint;
+        b.sign = 0;
+        return addInt(b);
       }
-      else if (this.sign == 1) {
-        gint.sign = 1;
-        return addInt(gint);
+      else if (sign == 1) {
+        System.out.println("Hi - I reached here!");
+        BrobInt b = gint;
+        b.sign = 1;
+        return addInt(b);
       }
       else{
+        System.out.println("guess i'm here");
         if (0 == compareTo(gint)){
           return ZERO;
         }
@@ -323,8 +329,10 @@ public class BrobInt {
           for (int i = resultArray.length -1; i >= 0 ;i--){
             strSum += resultArray[i];
           }
+          if (bigInt.sign == 1) {
+            strSum = "-" + strSum;
+          }
           BrobInt result = new BrobInt(strSum );
-          result.sign = sign;
           return result;
         }
         else {
@@ -363,8 +371,9 @@ public class BrobInt {
           for (int i = resultArray.length -1; i >= 0 ;i--){
             strSum += resultArray[i];
           }
+
+          strSum = "-" + strSum;
           BrobInt result = new BrobInt(strSum);
-          result.sign = 1;
           return result;
         }
       }
@@ -386,7 +395,7 @@ public class BrobInt {
       int s = 0;
       BrobInt sum = ZERO;
       int carry;
-
+      int k = 0;
 
       if (internalValue.length() > gint.internalValue.length()) {
         bigInt = this;
@@ -396,24 +405,31 @@ public class BrobInt {
         bigInt = gint;
         smallInt = this;
       }
-
-      for (int i = 0; i < smallInt.internalValue.length(); i++) {
-        digitPlace = i;
+      sum = ZERO;
+      for (int i = smallInt.internalValue.length() - 1; i >= 0; i--) {
+        digitPlace = k;
         tempSum = 0;
-        sum = ZERO;
         carry = 0;
         for (int j = bigInt.internalValue.length() - 1 ; j >= 0 ; j--) {
-          tempSum = Character.getNumericValue(j)*Character.getNumericValue(-i) + carry;
-          carry = s % 10;
-          tempSum = (int) Math.floor(tempSum / 10 );
-          sum = sum.addInt(new BrobInt(Integer.toString(tempSum * 10^digitPlace)) );
+          tempSum = Character.getNumericValue(bigInt.internalValue.charAt(j)) * Character.getNumericValue(smallInt.internalValue.charAt(i)) + carry;
+          if (tempSum >= 10) {
+            carry = (int) Math.floor(tempSum/10);
+            tempSum = tempSum % 10;
+          }
+          else {
+            carry = 0;
+          }
+          sum = sum.addInt(new BrobInt(Integer.toString(tempSum * (int) Math.pow(10,digitPlace) )) );
           digitPlace++;
         }
-        sum = sum.addInt( new BrobInt( Integer.toString( carry*10^digitPlace ) ));
-        result = result.addInt( sum );
+        sum = sum.addInt( new BrobInt( Integer.toString( carry * (int) Math.pow(10,digitPlace) ) ));
+        k++;
       }
-      result.sign = finalSign;
-      return result;
+      sum.sign = finalSign;
+      if (sum.sign == 1){
+        sum.internalValue = "-" + sum.internalValue;
+      }
+      return sum;
    }
 
   /** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -543,7 +559,14 @@ public class BrobInt {
    public static void main( String[] args ) {
       System.out.println( "\n  Hello, world, from the BrobInt program!!\n" );
       System.out.println( "\n   You should run your tests from the BrobIntTester...\n" );
-      BrobInt b = new BrobInt("1431423145135812348091273498075490832745908173490187359803475");
+      BrobInt b = new BrobInt("30");
+      System.out.println(Arrays.toString(b.intArray));
+      BrobInt b2 = new BrobInt("300000");
+      System.out.println(Arrays.toString(b2.intArray));
+      BrobInt b3 = new BrobInt("3000000000000000");
+      System.out.println(Arrays.toString(b3.intArray));
+      BrobInt b4 = new BrobInt("1234123582903874509837450182341234");
+      System.out.println(Arrays.toString(b4.intArray));
       System.exit( 0 );
    }
 }
