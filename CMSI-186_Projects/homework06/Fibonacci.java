@@ -82,9 +82,7 @@ public class Fibonacci {
      else if ( args[0] == 2 ){
        System.out.println( new BrobInt("0").toString() );
      }
-     else {
 
-     }
 
      // NOTE: you WILL need to initialize your BrobInts to keep track of things....
 
@@ -99,3 +97,4 @@ public class Fibonacci {
       System.exit( 0 );
    }
 }
+
