@@ -49,14 +49,9 @@ public class Fibonacci {
          System.out.println( "\n   Sorry, that does not compute!!" + usageMessage );
          System.exit( BAD_CMD_LINE_ARG );
       }
-      if( 2 == args.length ) {
-         try {
-            working = Integer.parseInt( args[1] );
-         }
-         catch( NumberFormatException nfe ) {
-            System.out.println( "\n   Sorry, that does not compute!!" + usageMessage );
-            System.exit( BAD_CMD_LINE_ARG );
-         }
+      if( 1 < args.length ) {
+         System.out.println(usageMessage);
+         System.exit(NO_CMD_LINE_ARGS);
       }
 
      // this is just for making the output pretty... no real "fibonacci" functionality
@@ -76,25 +71,28 @@ public class Fibonacci {
 
      // NOTE: you may want to handle the first and second Fibonacc numbers as 'special cases'...
 
-     if ( args[0] == 1 ) {
-       System.out.println( new BrobInt("0").toString() );
+
+     if (Integer.parseInt(args[0]) <= 2){
+       if (Integer.parseInt(args[0]) == 1) {
+         System.out.println(BrobInt.ZERO);
+       }
+       else if (Integer.parseInt(args[0]) == 2){
+         System.out.println(BrobInt.ONE);
+       }
      }
-     else if ( args[0] == 2 ){
-       System.out.println( new BrobInt("0").toString() );
+
+     BrobInt firstFib = BrobInt.ZERO;
+     BrobInt secondFib = BrobInt.ONE;
+
+     for (int i = 2; i < Integer.parseInt(args[0]); i++){
+       BrobInt temp = secondFib;
+       secondFib = secondFib.addInt(firstFib);
+       firstFib = temp;
      }
 
+     System.out.println(secondFib);
 
-     // NOTE: you WILL need to initialize your BrobInts to keep track of things....
+    System.exit(0);
+  	}
 
-     // NOTE: this section is just a happy notification that lets the user know to be patient.......
-      if( maxCount > working ) {
-         System.out.println( "\n                This may take me a while; please be patient!!\n\n" );
-      }
-
-      System.out.println( "\n\n\n  ...HA!! Like I'm going to do the ENTIRE thing for you.....  *grins*" );
-
-
-      System.exit( 0 );
    }
-}
-
