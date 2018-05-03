@@ -50,9 +50,39 @@ public class DynamicChangeMaker{
 
   public static Tuple makeChangeWithDynamicProgramming(int[] denominations, int target){
     // NOTE: Don't forget to reset Data to 0 after creating the respective Tuple for each Table location.
+
+
+    if (target < 0) {
+      System.out.println(BAD_DATA + "\n because target cannot be equal to zero");
+      System.out.println(usageMessage);
+      return Tuple.IMPOSSIBLE;
+    }
     coins = new Tuple(denominations); // success //
     theTable = new Tuple[coins.length()][target + 1];
     data = new int[coins.length()];
+
+    if (target == 0){
+      return new Tuple(data);
+    }
+    for (int i = 0; i < denominations.length; i++) {
+      if (denominations[i] < 0){
+        System.out.println(BAD_DATA + "\n because input arguments contain a negative number");
+        System.out.println(usageMessage);
+        return Tuple.IMPOSSIBLE;
+      }
+      else if (denominations[i] == 0) {
+        System.out.println(BAD_DATA + "\n because input arguments cannot contain a zero.");
+        System.out.println(usageMessage);
+        return Tuple.IMPOSSIBLE;
+      }
+      for (int j = 0; j < i; j++) {
+        if (denominations[j] == denominations[i]) {
+          System.out.println(BAD_DATA + "\n because input arguments are repeated.");
+          System.out.println(usageMessage);
+          return Tuple.IMPOSSIBLE;
+        }
+      }
+    }
 
     for (int i = 0; i < coins.length(); i++) {
       data[i] = 0;
@@ -143,7 +173,8 @@ public class DynamicChangeMaker{
     for (int i = 0; i < coinDenominations.length; i++){
       if (Integer.parseInt(coinDenominations[i]) < 0){
         System.out.println(BAD_DATA + "\n because input arguments contain a negative number");
-        throw new IllegalArgumentException(usageMessage);
+        System.out.println(usageMessage);
+        System.exit(0);
       }
       else if (Integer.parseInt(coinDenominations[i]) == 0){
         System.out.println(BAD_DATA + "\n because input arguments contain a zero. \n No such coin denomination as 0.");
@@ -166,7 +197,7 @@ public class DynamicChangeMaker{
       }
     }
 
-
+    System.exit(0);
   }
 
 }
